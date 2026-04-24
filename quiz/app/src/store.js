@@ -92,6 +92,12 @@ export function getStats() {
   return load().stats;
 }
 
+export function resetStats() {
+  const data = load();
+  data.stats = getDefaultData().stats;
+  save();
+}
+
 // --- Settings ---
 
 export function getSettings() {

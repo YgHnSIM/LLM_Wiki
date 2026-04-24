@@ -600,6 +600,29 @@ body {
 .legend-dot.learning { background: var(--accent-amber); }
 .legend-dot.mature { background: var(--accent-green); }
 
+.stats-reset-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  background: var(--gradient-card);
+  border: 1px solid rgba(248,113,113,.18);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.stats-reset-title {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--accent-red);
+}
+
+.stats-reset-desc {
+  font-size: .7rem;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
 /* ========== Settings View ========== */
 .settings-group {
   background: var(--gradient-card);

@@ -2,10 +2,12 @@
  * StatsView — Learning statistics dashboard
  */
 
-import { getStats, getAllCardStates } from '../store.js';
+import { getStats, getAllCardStates, resetStats } from '../store.js';
 import { getAllCards } from '../cardLoader.js';
 import { getMaturity } from '../sm2.js';
 import { daysAgo } from '../utils/dateUtils.js';
+import { showToast } from '../main.js';
+import { isSyncEnabled, pushToGist } from '../sync.js';
 
 export function renderStatsView() {
   const container = document.getElementById('view-container');
@@ -84,8 +86,37 @@ export function renderStatsView() {
           ${heatmapCells.map(c => `<div class="heatmap-cell level-${c.level}" title="${c.date}: ${c.count}회"></div>`).join('')}
         </div>
       </div>
+
+      <!-- Stats Management -->
+      <div class="stats-section">
+        <div class="stats-reset-panel">
+          <div>
+            <div class="stats-reset-title">통계 초기화</div>
+            <div class="stats-reset-desc">총 복습 횟수, 연속 일수, 일별 기록만 초기화합니다. 카드 학습 상태는 유지됩니다.</div>
+          </div>
+          <button class="btn btn-danger" id="reset-stats-btn">초기화</button>
+        </div>
+      </div>
     </div>
   `;
+
+  document.getElementById('reset-stats-btn').addEventListener('click', async () => {
+    if (!confirm('퀴즈 통계만 초기화할까요?\n카드 학습 상태와 설정은 유지됩니다.')) return;
+
+    resetStats();
+    showToast('통계가 초기화되었습니다');
+
+    if (isSyncEnabled()) {
+      try {
+        await pushToGist();
+        showToast('통계 초기화 및 동기화 완료');
+      } catch {
+        showToast('통계는 초기화됐지만 동기화에 실패했습니다');
+      }
+    }
+
+    renderStatsView();
+  });
 
   return { destroy() {} };
 }
