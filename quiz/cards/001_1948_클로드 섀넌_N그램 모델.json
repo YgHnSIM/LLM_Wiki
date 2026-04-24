@@ -1,0 +1,114 @@
+{
+  "source": "001_1948_클로드 섀넌_N그램 모델.md",
+  "created": "2026-04-25",
+  "cards": [
+    {
+      "id": "001-ngram-definition",
+      "type": "definition",
+      "difficulty": 1,
+      "front": "N그램(N-gram)이란 무엇인가?",
+      "back": "텍스트에서 연속된 n개 항목으로 이루어진 묶음이다. 항목은 단어, 문자, 음절 등이 될 수 있으며, 유니그램은 1개, 바이그램은 2개, 트라이그램은 3개 항목을 본다.",
+      "tags": ["nlp", "ngram", "definition"],
+      "relatedPages": ["N그램 모델"]
+    },
+    {
+      "id": "001-shannon-statistical-language",
+      "type": "causal",
+      "difficulty": 2,
+      "front": "섀넌의 언어 통계 연구가 NLP 역사에서 중요한 이유는 무엇인가?",
+      "back": "언어를 손으로 쓴 문법 규칙보다 실제 텍스트의 통계적 패턴으로 모델링할 수 있다는 관점을 제시했기 때문이다. 이 관점은 N그램 모델과 이후 통계적 언어 모델의 출발점이 되었다.",
+      "tags": ["shannon", "information-theory", "nlp-history"],
+      "relatedPages": ["클로드 섀넌", "정보 이론", "N그램 모델"]
+    },
+    {
+      "id": "001-markov-assumption-cloze",
+      "type": "cloze",
+      "difficulty": 2,
+      "front": "마르코프 가정은 다음 단어의 확률이 전체 과거가 아니라 {{c1::고정된 수의 최근 단어}}에만 의존한다고 본다.",
+      "back": "이 가정은 N그램 모델을 계산 가능하게 만들지만, 장거리 의존성을 놓치게 한다.",
+      "tags": ["markov-assumption", "ngram"],
+      "relatedPages": ["마르코프 가정", "N그램 모델"]
+    },
+    {
+      "id": "001-bigram-trigram-comparison",
+      "type": "comparison",
+      "difficulty": 1,
+      "front": "바이그램(bigram) 모델과 트라이그램(trigram) 모델의 차이는 무엇인가?",
+      "back": "바이그램 모델은 바로 앞 단어 하나를 문맥으로 보고, 트라이그램 모델은 앞의 두 단어를 문맥으로 본다. 트라이그램은 더 많은 문맥을 쓰지만 더 희소해진다.",
+      "tags": ["ngram", "comparison"],
+      "relatedPages": ["N그램 모델", "데이터 희소성"]
+    },
+    {
+      "id": "001-data-sparsity-causal",
+      "type": "causal",
+      "difficulty": 2,
+      "front": "N그램에서 n이 커질수록 데이터 희소성(data sparsity)이 심해지는 이유는 무엇인가?",
+      "back": "가능한 단어 조합 수가 지수적으로 늘어나기 때문이다. 어휘가 10,000개라면 가능한 바이그램은 1억 개, 트라이그램은 1조 개가 되어 대부분의 조합이 말뭉치에 나타나지 않는다.",
+      "tags": ["data-sparsity", "ngram"],
+      "relatedPages": ["데이터 희소성", "N그램 모델"]
+    },
+    {
+      "id": "001-smoothing-definition",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "언어 모델에서 스무딩(smoothing)은 무엇을 해결하려는 기법인가?",
+      "back": "학습 데이터에서 관찰되지 않은 단어열에도 0이 아닌 확률을 부여하려는 기법이다. N그램 모델의 데이터 희소성 문제를 완화한다.",
+      "tags": ["smoothing", "data-sparsity"],
+      "relatedPages": ["스무딩", "데이터 희소성"]
+    },
+    {
+      "id": "001-katz-backoff-definition",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "카츠 백오프(Katz back-off)의 핵심 아이디어는 무엇인가?",
+      "back": "긴 N그램 문맥을 관찰하지 못했을 때 더 짧은 문맥의 통계로 물러나는 것이다. 예를 들어 트라이그램이 없으면 바이그램, 그것도 없으면 유니그램을 사용한다.",
+      "tags": ["katz-backoff", "smoothing"],
+      "relatedPages": ["카츠 백오프", "슬라바 카츠", "스무딩"]
+    },
+    {
+      "id": "001-good-turing-kneser-ney-comparison",
+      "type": "comparison",
+      "difficulty": 3,
+      "front": "Good-Turing smoothing과 Kneser-Ney smoothing의 직관적 차이는 무엇인가?",
+      "back": "Good-Turing은 드물게 관찰된 사건을 이용해 미관찰 사건의 확률 질량을 추정한다. Kneser-Ney는 단어가 얼마나 자주 나왔는지뿐 아니라 얼마나 다양한 문맥에서 나왔는지를 중시한다.",
+      "tags": ["smoothing", "good-turing", "kneser-ney"],
+      "relatedPages": ["스무딩", "데이터 희소성"]
+    },
+    {
+      "id": "001-ngram-limitations",
+      "type": "comparison",
+      "difficulty": 2,
+      "front": "N그램 모델의 대표적 한계 두 가지는 무엇인가?",
+      "back": "첫째, 짧은 고정 문맥만 보기 때문에 장거리 의존성을 포착하기 어렵다. 둘째, 표면 토큰을 별개로 취급해 car와 automobile 같은 의미적 유사성을 표현하지 못한다.",
+      "tags": ["ngram", "limitations"],
+      "relatedPages": ["N그램 모델", "마르코프 가정", "분산 표현"]
+    },
+    {
+      "id": "001-distributed-representations-causal",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "분산 표현(distributed representations)은 N그램 모델의 어떤 한계를 넘어서려 했는가?",
+      "back": "단어를 조밀한 벡터로 표현해 의미적으로 비슷한 단어를 가까운 위치에 놓음으로써, 표면형이 다른 단어를 완전히 무관한 토큰으로 취급하던 한계를 줄이려 했다.",
+      "tags": ["distributed-representations", "word-embeddings"],
+      "relatedPages": ["분산 표현", "N그램에서 신경망 언어 모델로"]
+    },
+    {
+      "id": "001-timeline",
+      "type": "timeline",
+      "difficulty": 2,
+      "front": "이 소스가 설명하는 언어 모델 발전 흐름을 순서대로 말해 보라.",
+      "back": "섀넌의 정보 이론과 언어 통계 관점 -> N그램 모델 -> 데이터 희소성과 스무딩/백오프 -> 분산 표현과 신경망 언어 모델 -> 트랜스포머와 대규모 언어 모델.",
+      "tags": ["timeline", "nlp-history"],
+      "relatedPages": ["N그램에서 신경망 언어 모델로", "정보 이론", "N그램 모델"]
+    },
+    {
+      "id": "001-perplexity-definition",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "퍼플렉서티(perplexity)는 언어 모델에서 무엇을 나타내는가?",
+      "back": "언어 모델이 다음 단어 또는 토큰을 얼마나 덜 헷갈리며 예측하는지 나타내는 평가 지표다. 보통 낮을수록 실제 텍스트에 더 높은 확률을 부여한다고 해석한다.",
+      "tags": ["perplexity", "evaluation"],
+      "relatedPages": ["퍼플렉서티", "정보 이론"]
+    }
+  ]
+}
