@@ -1,6 +1,6 @@
 {
-  "version": "2026-04-24T20:59:47.815Z",
-  "totalCards": 12,
+  "version": "2026-04-24T23:38:42.577Z",
+  "totalCards": 25,
   "decks": [
     {
       "fileName": "001_1948_클로드 섀넌_N그램 모델.json",
@@ -192,6 +192,215 @@
           "relatedPages": [
             "퍼플렉서티",
             "정보 이론"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "002_1950_앨런 튜링_튜링 테스트.json",
+      "source": "002_1950_앨런 튜링_튜링 테스트.md",
+      "created": "2026-04-25",
+      "cardCount": 13,
+      "cards": [
+        {
+          "id": "002-turing-test-definition",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "튜링 테스트(Turing Test)란 무엇인가?",
+          "back": "기계가 텍스트 대화만으로 인간과 구별되지 않을 수 있는지를 평가하는 사고 실험이자 행동 기준이다.",
+          "tags": [
+            "turing-test",
+            "ai-history",
+            "definition"
+          ],
+          "relatedPages": [
+            "튜링 테스트",
+            "앨런 튜링"
+          ]
+        },
+        {
+          "id": "002-imitation-game-definition",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "이미테이션 게임(Imitation Game)의 기본 설정은 무엇인가?",
+          "back": "판정자가 보이지 않는 인간과 기계와 텍스트로만 대화한 뒤, 어느 쪽이 인간인지 판단하는 구조다. 비언어적 단서를 제거하고 언어 행동만 평가한다.",
+          "tags": [
+            "imitation-game",
+            "turing-test"
+          ],
+          "relatedPages": [
+            "이미테이션 게임",
+            "튜링 테스트"
+          ]
+        },
+        {
+          "id": "002-operational-definition-cloze",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "튜링은 '기계가 생각할 수 있는가?'라는 질문을 {{c1::텍스트 대화에서 인간과 구별되지 않는가}}라는 조작 가능한 질문으로 바꾸었다.",
+          "back": "이 전환은 추상 개념을 관찰 가능한 절차로 바꾸는 조작적 정의의 사례다.",
+          "tags": [
+            "operational-definition",
+            "turing"
+          ],
+          "relatedPages": [
+            "조작적 정의",
+            "튜링 테스트"
+          ]
+        },
+        {
+          "id": "002-language-central-causal",
+          "type": "causal",
+          "difficulty": 2,
+          "front": "튜링 테스트에서 언어가 지능 평가의 중심 매체가 된 이유는 무엇인가?",
+          "back": "대화에는 문맥 유지, 세계 지식, 추론, 적응적 의사소통, 창의성이 함께 필요하기 때문이다. 언어는 여러 지적 능력이 동시에 드러나는 통합 무대다.",
+          "tags": [
+            "language",
+            "ai-evaluation",
+            "turing-test"
+          ],
+          "relatedPages": [
+            "튜링 테스트",
+            "앨런 튜링"
+          ]
+        },
+        {
+          "id": "002-behaviorist-criterion-definition",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "행동주의적 기준(behaviorist criterion)은 AI 평가에서 무엇을 중시하는가?",
+          "back": "내부 의식이나 주관적 경험보다 외부에서 관찰되는 행동을 근거로 판단한다. 튜링 테스트는 대화 행동을 기준으로 기계 지능을 평가한다.",
+          "tags": [
+            "behaviorist-criterion",
+            "ai-philosophy"
+          ],
+          "relatedPages": [
+            "행동주의적 기준",
+            "튜링 테스트"
+          ]
+        },
+        {
+          "id": "002-chinese-room-definition",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "중국어 방 논증(Chinese Room argument)의 핵심 주장은 무엇인가?",
+          "back": "규칙에 따라 적절한 언어 출력을 만들 수 있어도, 그것이 실제 의미 이해를 뜻한다고 단정할 수 없다는 주장이다.",
+          "tags": [
+            "chinese-room",
+            "searle",
+            "understanding"
+          ],
+          "relatedPages": [
+            "중국어 방 논증",
+            "존 설"
+          ]
+        },
+        {
+          "id": "002-turing-test-limitations",
+          "type": "comparison",
+          "difficulty": 2,
+          "front": "튜링 테스트의 대표적 한계 두 가지는 무엇인가?",
+          "back": "첫째, 인간처럼 보이는 언어 행동이 실제 이해나 의식을 보장하지 않는다. 둘째, 인간과 닮은 행동을 지능의 기준으로 삼는 인간중심적 편향을 가질 수 있다.",
+          "tags": [
+            "turing-test",
+            "limitations"
+          ],
+          "relatedPages": [
+            "튜링 테스트",
+            "중국어 방 논증",
+            "인간중심주의"
+          ]
+        },
+        {
+          "id": "002-anthropocentrism-definition",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "AI 평가에서 인간중심주의(anthropocentrism)는 어떤 문제를 만든가?",
+          "back": "인간처럼 말하거나 행동하는 능력을 지능의 황금 기준으로 삼아, 인간과 다른 방식으로 강력한 지능이나 실제 작업 능력을 과소평가할 수 있다.",
+          "tags": [
+            "anthropocentrism",
+            "ai-evaluation"
+          ],
+          "relatedPages": [
+            "인간중심주의",
+            "튜링 테스트"
+          ]
+        },
+        {
+          "id": "002-llm-turing-test-comparison",
+          "type": "comparison",
+          "difficulty": 3,
+          "front": "현대 LLM이 튜링 테스트를 복잡하게 만든 이유는 무엇인가?",
+          "back": "LLM은 제한된 대화에서 인간처럼 보일 수 있지만, 사실성, 장기 일관성, 체화된 경험, 의미 이해에서는 여전히 한계를 보인다. 따라서 인간다움만으로 평가하기 어렵다.",
+          "tags": [
+            "llm",
+            "turing-test",
+            "evaluation"
+          ],
+          "relatedPages": [
+            "대규모 언어 모델",
+            "튜링 테스트와 현대 LLM 평가"
+          ]
+        },
+        {
+          "id": "002-modern-evaluation-causal",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "현대 LLM 평가가 튜링 테스트만으로 충분하지 않은 이유는 무엇인가?",
+          "back": "실제 제품에서는 인간처럼 보이는 대화뿐 아니라 사실성, 신뢰성, 안전성, 도구 사용 정확도, 장기 작업 수행, 실패 복구 능력까지 평가해야 하기 때문이다.",
+          "tags": [
+            "llm-evaluation",
+            "benchmark"
+          ],
+          "relatedPages": [
+            "튜링 테스트와 현대 LLM 평가",
+            "벤치마크"
+          ]
+        },
+        {
+          "id": "002-embodied-experience-definition",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "체화된 경험(embodied experience)이란 무엇이며, LLM 논쟁에서 왜 중요한가?",
+          "back": "몸, 감각, 행동, 환경과의 상호작용을 통해 형성되는 경험이다. LLM은 언어적으로 유창해도 직접적인 물리 세계 경험이 없기 때문에 인간과 다른 한계를 가질 수 있다.",
+          "tags": [
+            "embodiment",
+            "llm"
+          ],
+          "relatedPages": [
+            "체화된 경험",
+            "대규모 언어 모델"
+          ]
+        },
+        {
+          "id": "002-timeline",
+          "type": "timeline",
+          "difficulty": 2,
+          "front": "이 소스가 설명하는 튜링 테스트 논의의 흐름을 순서대로 말해 보라.",
+          "back": "1950년 튜링의 이미테이션 게임 제안 -> 언어를 지능 평가의 중심 무대로 설정 -> 중국어 방 논증과 인간중심주의 비판 -> 현대 LLM의 제한적 인간다움 -> 다층적 LLM 평가로 확장.",
+          "tags": [
+            "timeline",
+            "ai-history"
+          ],
+          "relatedPages": [
+            "튜링 테스트",
+            "튜링 테스트와 현대 LLM 평가"
+          ]
+        },
+        {
+          "id": "002-shannon-turing-comparison",
+          "type": "comparison",
+          "difficulty": 3,
+          "front": "섀넌의 N그램 계보와 튜링 테스트 계보는 각각 어떤 질문을 대표하는가?",
+          "back": "섀넌의 계보는 언어를 어떻게 확률적으로 예측할 것인가를 묻고, 튜링의 계보는 언어 행동이 지능의 증거가 될 수 있는가를 묻는다. 현대 LLM은 두 질문이 만나는 지점에 있다.",
+          "tags": [
+            "shannon",
+            "turing",
+            "llm-history"
+          ],
+          "relatedPages": [
+            "N그램에서 신경망 언어 모델로",
+            "튜링 테스트와 현대 LLM 평가"
           ]
         }
       ]
