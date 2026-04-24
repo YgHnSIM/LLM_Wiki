@@ -1,0 +1,17 @@
+{
+  "name": "llm-wiki-quiz",
+  "private": true,
+  "version": "1.0.0",
+  "description": "LLM Wiki Spaced Repetition Quiz App",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node ../scripts/prepare-cards.js && vite build",
+    "preview": "vite preview",
+    "prepare-cards": "node ../scripts/prepare-cards.js"
+  },
+  "devDependencies": {
+    "vite": "^6.3.0",
+    "vite-plugin-pwa": "^1.0.0"
+  }
+}

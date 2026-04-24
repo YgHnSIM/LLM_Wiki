@@ -1,0 +1,1438 @@
+{
+  "version": "2026-04-22T20:37:29.964Z",
+  "totalCards": 95,
+  "decks": [
+    {
+      "fileName": "001_claude_shannon.json",
+      "source": "001_클로드 섀넌의 N-gram 모델",
+      "created": "2026-04-19",
+      "cardCount": 10,
+      "cards": [
+        {
+          "id": "001-def-001",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "N-gram 모델(N-gram Model)이란?",
+          "back": "단어 시퀀스의 통계적 패턴을 기반으로, 이전 N-1개의 단어를 보고 다음 단어의 확률을 예측하는 언어 모델. 클로드 섀넌(Claude Shannon)이 1948년 제안했다.",
+          "tags": [
+            "domain/ai",
+            "domain/information-theory"
+          ],
+          "relatedPages": [
+            "N-gram 모델",
+            "클로드 섀넌"
+          ]
+        },
+        {
+          "id": "001-def-002",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "정보 이론(Information Theory)이란?",
+          "back": "정보를 정량화하고 전송하는 수학적 프레임워크. 클로드 섀넌이 1948년 논문 'A Mathematical Theory of Communication'에서 창시했다.",
+          "tags": [
+            "domain/information-theory"
+          ],
+          "relatedPages": [
+            "정보 이론",
+            "클로드 섀넌"
+          ]
+        },
+        {
+          "id": "001-def-003",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "마르코프 가정(Markov Assumption)이란?",
+          "back": "다음 상태(단어)의 확률이 오직 현재 상태(고정된 수의 이전 단어들)에만 의존한다는 가정. 계산의 실용성을 위해 도입되었다.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "마르코프 가정",
+            "N-gram 모델"
+          ]
+        },
+        {
+          "id": "001-cloze-001",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "섀넌의 정보량 공식: I(x) = -log₂ ___",
+          "back": "P(x) — 사건의 발생 확률. 덜 예측 가능할수록(확률이 낮을수록) 더 많은 정보를 전달한다.",
+          "tags": [
+            "domain/information-theory"
+          ],
+          "relatedPages": [
+            "정보 이론"
+          ]
+        },
+        {
+          "id": "001-cloze-002",
+          "type": "cloze",
+          "difficulty": 1,
+          "front": "클로드 섀넌(Claude Shannon)이 정보 이론을 발표한 해는 ___년이다.",
+          "back": "1948",
+          "tags": [
+            "domain/information-theory"
+          ],
+          "relatedPages": [
+            "클로드 섀넌"
+          ]
+        },
+        {
+          "id": "001-causal-001",
+          "type": "causal",
+          "difficulty": 2,
+          "front": "섀넌이 언어에 마르코프 가정(Markov Assumption)을 도입한 이유는?",
+          "back": "전체 문맥을 고려하면 계산이 사실상 불가능하므로, 다음 단어가 고정된 수의 이전 단어에만 의존한다고 가정하여 계산의 실용성을 확보하기 위함.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "마르코프 가정",
+            "N-gram 모델"
+          ]
+        },
+        {
+          "id": "001-causal-002",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "섀넌의 N-gram 모델이 현대 LLM(Large Language Model)의 토대가 되는 이유는?",
+          "back": "GPT와 같은 현대 LLM도 본질적으로는 섀넌이 정의한 '확률 분포 추정'이라는 과제를 신경망으로 확장한 것이다. 핵심 원리('다음 토큰 예측')는 동일하며, 모델의 규모와 정교함만 달라졌다.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "N-gram 모델",
+            "클로드 섀넌"
+          ]
+        },
+        {
+          "id": "001-person-001",
+          "type": "person",
+          "difficulty": 1,
+          "front": "클로드 섀넌(Claude Shannon)의 주요 업적은?",
+          "back": "1) 정보 이론(Information Theory)의 창시 (1948)\n2) 정보량의 수학적 정의 (비트 개념)\n3) N-gram 모델을 통해 언어를 확률적으로 모델링할 수 있음을 최초로 제시\n4) 언어를 '규칙'이 아닌 '통계적 현상'으로 재정의",
+          "tags": [
+            "domain/ai",
+            "domain/information-theory"
+          ],
+          "relatedPages": [
+            "클로드 섀넌",
+            "정보 이론",
+            "N-gram 모델"
+          ]
+        },
+        {
+          "id": "001-comparison-001",
+          "type": "comparison",
+          "difficulty": 2,
+          "front": "섀넌 이전의 언어관 vs 섀넌의 언어관의 핵심 차이는?",
+          "back": "이전: 언어는 '규칙의 체계'로, 문법과 규칙으로 설명 가능\n섀넌 이후: 언어는 '통계적 현상'으로, 확률 분포로 모델링 가능\n이 전환이 현대 데이터 기반 NLP의 철학적 토대가 되었다.",
+          "tags": [
+            "domain/ai",
+            "domain/information-theory"
+          ],
+          "relatedPages": [
+            "N-gram 모델",
+            "클로드 섀넌"
+          ]
+        },
+        {
+          "id": "001-quote-001",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "섀넌: \"덜 ___한 것일수록, 실제로 발생했을 때 더 많은 ___를 전달한다.\"",
+          "back": "예측 가능 / 정보",
+          "tags": [
+            "domain/information-theory"
+          ],
+          "relatedPages": [
+            "정보 이론"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "002_alan_turing.json",
+      "source": "002_앨런 튜링의 이미테이션 게임",
+      "created": "2026-04-19",
+      "cardCount": 11,
+      "cards": [
+        {
+          "id": "002-def-001",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "튜링 테스트(Turing Test)란?",
+          "back": "기계가 인간과 구별할 수 없는 수준의 지능적 언어 행동을 보이는지 판별하는 테스트. 1950년 앨런 튜링(Alan Turing)이 제안했으며, 원래 명칭은 '이미테이션 게임(Imitation Game)'이다.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "튜링 테스트",
+            "앨런 튜링"
+          ]
+        },
+        {
+          "id": "002-def-002",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "중국어 방 논쟁(Chinese Room Argument)이란?",
+          "back": "철학자 존 설(John Searle)이 1980년 제안한 사고 실험. 기호 조작(Syntax)만으로는 진정한 이해(Semantics)에 도달할 수 없다고 주장하며, 튜링 테스트의 한계를 비판한다.",
+          "tags": [
+            "domain/ai",
+            "domain/philosophy"
+          ],
+          "relatedPages": [
+            "중국어 방 논쟁",
+            "튜링 테스트"
+          ]
+        },
+        {
+          "id": "002-def-003",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "행동주의(Behaviorism)란 무엇이며, 튜링 테스트와의 관계는?",
+          "back": "내부 구조보다 외부에서 관찰 가능한 행동에 집중하는 연구 방법론. 튜링 테스트는 기계의 내부(의식, 알고리즘)가 아닌 '언어적 행동'만으로 지능을 판단하는 행동주의적 기준을 채택했다.",
+          "tags": [
+            "domain/ai",
+            "domain/philosophy"
+          ],
+          "relatedPages": [
+            "행동주의",
+            "튜링 테스트"
+          ]
+        },
+        {
+          "id": "002-causal-001",
+          "type": "causal",
+          "difficulty": 2,
+          "front": "튜링이 '기계가 생각할 수 있는가?'라는 질문을 '이미테이션 게임'으로 재구성한 이유는?",
+          "back": "'생각한다'는 개념이 너무 모호하고 정의 불가능하므로, '기계가 인간의 언어적 행동을 완벽히 흉내 낼 수 있는가?'라는 관찰 가능하고 실험 가능한 행동주의적 질문으로 대체한 것이다.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "튜링 테스트",
+            "행동주의"
+          ]
+        },
+        {
+          "id": "002-causal-002",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "현대 LLM이 튜링 테스트를 부분적으로 통과하면서도 '외계적 지능(Alien Intelligence)'이라 불리는 이유는?",
+          "back": "GPT-4 등은 전문가 수준의 토론이 가능하면서도 기초 상식에서 실패하는 등, 인간과는 질적으로 전혀 다른 지능의 양상을 보이기 때문이다. '초인적 지식 + 기초 지능 결여'라는 역설적 조합이 핵심.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "튜링 테스트"
+          ]
+        },
+        {
+          "id": "002-comparison-001",
+          "type": "comparison",
+          "difficulty": 3,
+          "front": "시뮬레이션(Simulation) vs 복제(Replication): 중국어 방 논쟁에서의 구분은?",
+          "back": "시뮬레이션: 외부에서 관찰할 때 지능적으로 '보이는' 행동 (기호를 규칙에 따라 조작)\n복제: 내부적으로 진정한 이해와 의미 파악이 이루어지는 상태\n존 설은 튜링 테스트 통과는 시뮬레이션일 뿐 복제가 아니라고 주장했다.",
+          "tags": [
+            "domain/ai",
+            "domain/philosophy"
+          ],
+          "relatedPages": [
+            "중국어 방 논쟁",
+            "튜링 테스트"
+          ]
+        },
+        {
+          "id": "002-cloze-001",
+          "type": "cloze",
+          "difficulty": 1,
+          "front": "앨런 튜링(Alan Turing)이 이미테이션 게임을 제안한 논문 제목은 '___와 ___'이다.",
+          "back": "계산 기계(Computing Machinery) / 지성(Intelligence) — 원제: 'Computing Machinery and Intelligence' (1950)",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "앨런 튜링",
+            "튜링 테스트"
+          ]
+        },
+        {
+          "id": "002-cloze-002",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "중국어 방 논쟁에서 기계는 기호의 ___(문법)은 따를 수 있지만 기호가 담고 있는 ___(의미론)를 파악하지 못한다.",
+          "back": "Syntax(구문) / Semantics(의미)",
+          "tags": [
+            "domain/philosophy"
+          ],
+          "relatedPages": [
+            "중국어 방 논쟁"
+          ]
+        },
+        {
+          "id": "002-person-001",
+          "type": "person",
+          "difficulty": 1,
+          "front": "앨런 튜링(Alan Turing)의 AI 분야 주요 업적은?",
+          "back": "1) 튜링 테스트(이미테이션 게임) 제안 (1950)\n2) '기계가 생각할 수 있는가?'라는 질문을 실험 가능한 형태로 정립\n3) 언어를 지능의 가장 종합적인 시험대로 제시 → 현대 NLP/LLM 연구의 초석\n4) '컴퓨터 과학과 인공지능의 아버지'로 불림",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "앨런 튜링",
+            "튜링 테스트"
+          ]
+        },
+        {
+          "id": "002-quote-001",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "현대 AI의 역설: \"양자 물리학에 대해 전문가 수준으로 토론하지만, ___에서는 진정한 이해 능력을 갖추지 못했다.\"",
+          "back": "정작 중요한 부분 — 인간이라면 절대 범하지 않을 오류 패턴을 종종 드러낸다.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "튜링 테스트"
+          ]
+        },
+        {
+          "id": "002-timeline-001",
+          "type": "timeline",
+          "difficulty": 2,
+          "front": "튜링 테스트 관련 주요 연대기를 순서대로 나열하라: 이미테이션 게임 제안 / 중국어 방 논쟁 / GPT-4 부분 통과",
+          "back": "1950년 — 앨런 튜링, 이미테이션 게임(튜링 테스트) 제안\n1980년 — 존 설, 중국어 방 논쟁으로 반박\n2023년~ — GPT-4 등 LLM이 짧은 대화에서 튜링 테스트를 부분 통과",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "튜링 테스트",
+            "중국어 방 논쟁"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "003_georgetown_ibm.json",
+      "source": "003_Georgetown-IBM Machine",
+      "created": "2026-04-19",
+      "cardCount": 10,
+      "cards": [
+        {
+          "id": "003-def-001",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "조지타운-IBM 시연(Georgetown-IBM Experiment)이란?",
+          "back": "1954년 조지타운 대학교와 IBM이 IBM 701 컴퓨터로 60개의 러시아어 문장을 영어로 자동 번역하여 세계 최초로 기계 번역(Machine Translation)의 가능성을 대중에게 증명한 시연.",
+          "tags": [
+            "domain/ai",
+            "domain/linguistics"
+          ],
+          "relatedPages": [
+            "조지타운-IBM 시연",
+            "리온 도스터트"
+          ]
+        },
+        {
+          "id": "003-def-002",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "규칙 기반 번역(Rule-based Translation)이란?",
+          "back": "인간이 명시적으로 작성한 언어 규칙과 사전 데이터를 결합하여 번역하는 방식. 조지타운-IBM 시연에서는 '사전 기반 접근 방식(Dictionary-based approach)'을 사용했다.",
+          "tags": [
+            "domain/linguistics"
+          ],
+          "relatedPages": [
+            "규칙 기반 번역",
+            "조지타운-IBM 시연"
+          ]
+        },
+        {
+          "id": "003-def-003",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "지식 공학의 병목 현상(Knowledge Engineering Bottleneck)이란?",
+          "back": "인간 전문가의 지식을 일일이 규칙으로 코딩하는 과정에서 발생하는 효율성 한계. 수동 규칙 구축은 확장이 어렵고, 이 한계가 훗날 데이터 중심 머신러닝(Machine Learning) 패러다임으로의 전환을 이끌었다.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "지식 공학의 병목 현상"
+          ]
+        },
+        {
+          "id": "003-causal-001",
+          "type": "causal",
+          "difficulty": 2,
+          "front": "냉전(Cold War)이 조지타운-IBM 기계 번역 시연의 추진력이 된 이유는?",
+          "back": "소련의 과학 기술 문서를 신속하게 번역해야 했던 미국의 국가 안보적 필요성이 추진력이 되었다. 이 시대적 맥락이 정부의 대규모 투자를 이끌어냈다.",
+          "tags": [
+            "domain/ai",
+            "domain/linguistics"
+          ],
+          "relatedPages": [
+            "조지타운-IBM 시연"
+          ]
+        },
+        {
+          "id": "003-causal-002",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "조지타운-IBM 시연의 성공이 역설적으로 'AI 겨울'로 이어진 과정은?",
+          "back": "시연 성공 → 과도한 낙관론과 막대한 정부 투자 → 실제 자연어의 모호성과 지식 공학의 병목 현상이 드러남 → 기대에 부응하지 못한 결과 → 투자와 관심 감소 → 인공지능의 겨울(AI Winter) 촉발",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "조지타운-IBM 시연",
+            "인공지능의 겨울",
+            "지식 공학의 병목 현상"
+          ]
+        },
+        {
+          "id": "003-causal-003",
+          "type": "causal",
+          "difficulty": 2,
+          "front": "조지타운-IBM 시연이 '통제된 환경의 성공(Controlled Demo)'이라 불리는 이유는?",
+          "back": "60개의 문장이 시스템의 강점을 극대화하도록 사전에 엄격히 선별되었기 때문이다. 실제 복잡한 자연어와는 차이가 있었으며, 이 관행은 이후 AI 시연에서 반복되는 전형적 패턴이 되었다.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "조지타운-IBM 시연"
+          ]
+        },
+        {
+          "id": "003-person-001",
+          "type": "person",
+          "difficulty": 2,
+          "front": "리온 도스터트(Leon Dostert)는 누구인가?",
+          "back": "조지타운 대학교의 언어학자로, 조지타운-IBM 기계 번역 시연을 주도한 인물. 컴퓨터를 이용한 언어 번역의 가능성을 세계 최초로 대중에게 시연했다.",
+          "tags": [
+            "domain/linguistics"
+          ],
+          "relatedPages": [
+            "리온 도스터트",
+            "조지타운-IBM 시연"
+          ]
+        },
+        {
+          "id": "003-cloze-001",
+          "type": "cloze",
+          "difficulty": 1,
+          "front": "조지타운-IBM 시연(1954)에서는 ___ 컴퓨터를 사용해 ___개의 러시아어 문장을 영어로 번역했다.",
+          "back": "IBM 701 / 60",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "조지타운-IBM 시연"
+          ]
+        },
+        {
+          "id": "003-comparison-001",
+          "type": "comparison",
+          "difficulty": 3,
+          "front": "규칙 기반 번역(Rule-based) vs 현대 데이터 기반 번역(Data-driven)의 핵심 차이는?",
+          "back": "규칙 기반: 인간이 명시적으로 규칙과 사전을 코딩 → 확장성 한계(지식 공학의 병목)\n데이터 기반: 대량의 병렬 코퍼스에서 패턴을 자동 학습 → 확장 가능\n이 전환의 근본 원인이 바로 조지타운-IBM 시연 이후 드러난 규칙 기반의 한계였다.",
+          "tags": [
+            "domain/ai",
+            "domain/linguistics"
+          ],
+          "relatedPages": [
+            "규칙 기반 번역",
+            "지식 공학의 병목 현상"
+          ]
+        },
+        {
+          "id": "003-concept-001",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "Human-in-the-loop(인간 참여형 모델)의 기원은?",
+          "back": "조지타운-IBM 시연에서 최초로 제안된 협업 모델. 기계가 번역 초안을 잡고 인간이 교정하는 방식으로, 오늘날의 AI 보조 번역 및 RLHF(인간 피드백 강화학습)의 초기 형태이다.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "조지타운-IBM 시연"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "004_perceptron.json",
+      "source": "004_프랭크 로젠블랫의 퍼셉트론.md",
+      "created": "2026-04-20",
+      "cardCount": 10,
+      "cards": [
+        {
+          "id": "p004_01",
+          "type": "definition",
+          "difficulty": "easy",
+          "front": "1958년 프랭크 로젠블랫이 고안한, 데이터를 통해 스스로 학습할 수 있는 최초의 인공 신경망 모델의 이름은?",
+          "back": "퍼셉트론 (Perceptron)",
+          "tags": [
+            "history",
+            "ai"
+          ],
+          "relatedPages": [
+            "[[퍼셉트론]]",
+            "[[프랭크 로젠블랫]]"
+          ]
+        },
+        {
+          "id": "p004_02",
+          "type": "causal",
+          "difficulty": "medium",
+          "front": "퍼셉트론이 기존의 규칙 기반 AI와 달던 결정적인 차이점은 무엇인가요?",
+          "back": "명시적으로 규칙을 프로그래밍하는 대신, 여러 예시(데이터)를 통해 패턴을 스스로 인식하고 가중치를 조정하며 지식을 습득하는 '학습' 방식이라는 점입니다.",
+          "tags": [
+            "theory",
+            "machine-learning"
+          ],
+          "relatedPages": [
+            "[[퍼셉트론]]"
+          ]
+        },
+        {
+          "id": "p004_03",
+          "type": "definition",
+          "difficulty": "medium",
+          "front": "퍼셉트론의 구조에서 입력값의 중요도를 결정하며, 오차 발생 시 수정되는 내부 매개변수의 명칭은?",
+          "back": "가중치 (Weight, $w$)",
+          "tags": [
+            "math",
+            "architecture"
+          ],
+          "relatedPages": [
+            "[[퍼셉트론]]"
+          ]
+        },
+        {
+          "id": "p004_04",
+          "type": "definition",
+          "difficulty": "medium",
+          "front": "퍼셉트론에서 입력값이 모두 0일 때도 시스템이 고정된 출력만을 내보내지 않도록 임계치를 조정해주는 항의 명칭은?",
+          "back": "편향 (Bias, $b$)",
+          "tags": [
+            "math",
+            "architecture"
+          ],
+          "relatedPages": [
+            "[[퍼셉트론]]"
+          ]
+        },
+        {
+          "id": "p004_05",
+          "type": "cloze",
+          "difficulty": "hard",
+          "front": "퍼셉트론의 가중치 업데이트 규칙 수식인 $w_i^{new} = w_i^{old} + {{c1::\\eta}} \\cdot (\\text{target} - \\text{output}) \\cdot x_i$ 에서 {{c1::\\eta}}가 의미하는 것은?",
+          "back": "학습률 (Learning Rate)",
+          "tags": [
+            "math",
+            "algorithm"
+          ],
+          "relatedPages": [
+            "[[퍼셉트론]]"
+          ]
+        },
+        {
+          "id": "p004_06",
+          "type": "cloze",
+          "difficulty": "medium",
+          "front": "퍼셉트론은 오직 {{c1::선형 분리 가능 (Linearly Separable)}}한 데이터 집합에 대해서만 최적의 해(결정 경계)를 찾을 수 있다는 증명이 무엇인가요?",
+          "back": "로젠블랫의 수렴 정리 (Rosenblatt's Convergence Theorem)",
+          "tags": [
+            "theory",
+            "math"
+          ],
+          "relatedPages": [
+            "[[프랭크 로젠블랫]]",
+            "[[퍼셉트론]]"
+          ]
+        },
+        {
+          "id": "p004_07",
+          "type": "comparison",
+          "difficulty": "hard",
+          "front": "단층 퍼셉트론이 해결할 수 없었던 논리 연산 예시와 그 이유는?",
+          "back": "XOR 문제. XOR 데이터는 직선 하나로는 두 영역을 완벽하게 나눌 수 없는 '비선형성'을 띠고 있기 때문입니다.",
+          "tags": [
+            "history",
+            "theory"
+          ],
+          "relatedPages": [
+            "[[XOR 문제]]",
+            "[[퍼셉트론]]"
+          ]
+        },
+        {
+          "id": "p004_08",
+          "type": "timeline",
+          "difficulty": "medium",
+          "front": "1969년 마빈 민스키와 시모어 페퍼트가 퍼셉트론의 한계를 지적하며 초래된 AI 연구의 정기 시기를 가리키는 용어는?",
+          "back": "인공지능의 겨울 (AI Winter)",
+          "tags": [
+            "history"
+          ],
+          "relatedPages": [
+            "[[인공지능의 겨울]]",
+            "[[XOR 문제]]"
+          ]
+        },
+        {
+          "id": "p004_09",
+          "type": "person",
+          "difficulty": "medium",
+          "front": "코넬 항공 연구소 소속으로 '연결주의(Connectionism)' 철학을 바탕으로 퍼셉트론을 창시한 인물은?",
+          "back": "프랭크 로젠블랫 (Frank Rosenblatt)",
+          "tags": [
+            "person",
+            "history"
+          ],
+          "relatedPages": [
+            "[[프랭크 로젠블랫]]"
+          ]
+        },
+        {
+          "id": "p004_10",
+          "type": "comparison",
+          "difficulty": "hard",
+          "front": "퍼셉트론의 수학적 공식 $y = f(Wx + b)$는 오늘날 어떤 최첨단 AI 모델의 아키텍처 내에서도 계승되고 있나요?",
+          "back": "트랜스포머 (Transformer) 등 현대 딥러닝 모델의 선형 레이어 (Linear Layers)",
+          "tags": [
+            "modern-ai",
+            "architecture"
+          ],
+          "relatedPages": [
+            "[[퍼셉트론]]",
+            "[[다층 퍼셉트론]]"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "005_chomsky_syntactic_structures.json",
+      "source": "005_노암 촘스키의 통사 구조",
+      "created": "2026-04-20",
+      "cardCount": 10,
+      "cards": [
+        {
+          "id": "chomsky-001",
+          "type": "definition",
+          "difficulty": "easy",
+          "front": "노엄 촘스키가 1957년에 출간하여 언어학의 패러다임을 바꾼 저작의 제목은?",
+          "back": "통사 구조 (Syntactic Structures)",
+          "tags": [
+            "history",
+            "linguistics"
+          ],
+          "relatedPages": [
+            "통사 구조",
+            "노엄 촘스키"
+          ]
+        },
+        {
+          "id": "chomsky-002",
+          "type": "definition",
+          "difficulty": "medium",
+          "front": "인간이 태생적으로 언어 능력을 갖추고 태어난다는 촘스키의 핵심 가설은?",
+          "back": "보편 문법 (Universal Grammar, UG)",
+          "tags": [
+            "theory",
+            "nativism"
+          ],
+          "relatedPages": [
+            "보편 문법"
+          ]
+        },
+        {
+          "id": "chomsky-003",
+          "type": "cloze",
+          "difficulty": "medium",
+          "front": "촘스키는 문장의 겉모양인 '표면 구조'와 대비하여, 문장의 근본적인 의미와 문법 관계를 담은 계층적 구조를 '{{c1:심층 구조 (Deep Structure)}}'라고 불렀다.",
+          "back": "심층 구조 (Deep Structure)",
+          "tags": [
+            "theory",
+            "linguistics"
+          ],
+          "relatedPages": [
+            "변형 생성 문법"
+          ]
+        },
+        {
+          "id": "chomsky-004",
+          "type": "causal",
+          "difficulty": "hard",
+          "front": "촘스키가 '자극의 빈곤(Poverty of the Stimulus)' 논거를 통해 반박하고자 했던 심리학적 패러다임은?",
+          "back": "행동주의 (Behaviorism). 아이들이 접하는 데이터가 부족함에도 언어를 완벽히 습득하는 것은 단순한 '자극-반응' 모델로 설명할 수 없기 때문입니다.",
+          "tags": [
+            "critique",
+            "psychology"
+          ],
+          "relatedPages": [
+            "행동주의",
+            "자극의 빈곤"
+          ]
+        },
+        {
+          "id": "chomsky-005",
+          "type": "definition",
+          "difficulty": "medium",
+          "front": "형식 문법의 연산 능력을 4단계로 분류하여 컴퓨터 과학의 기초가 된 체계의 명칭은?",
+          "back": "촘스키 계층 (Chomsky Hierarchy)",
+          "tags": [
+            "computer_science",
+            "formal_grammar"
+          ],
+          "relatedPages": [
+            "촘스키 계층"
+          ]
+        },
+        {
+          "id": "chomsky-006",
+          "type": "definition",
+          "difficulty": "easy",
+          "front": "유한한 규칙의 집합을 사용하여 무한한 수의 문법적인 문장을 생성해내는 체계는?",
+          "back": "변형 생성 문법 (Transformational Generative Grammar)",
+          "tags": [
+            "theory",
+            "linguistics"
+          ],
+          "relatedPages": [
+            "변형 생성 문법"
+          ]
+        },
+        {
+          "id": "chomsky-007",
+          "type": "cloze",
+          "difficulty": "medium",
+          "front": "촘스키는 자연어의 '{{c1:재귀성 (Recursivity)}}' 때문에 유한 상태 모델(Finite-state models)로는 자연어를 완벽히 설명할 수 없음을 증명했다.",
+          "back": "재귀성 (Recursivity)",
+          "tags": [
+            "linguistics",
+            "mathematics"
+          ],
+          "relatedPages": [
+            "통사 구조",
+            "촘스키 계층"
+          ]
+        },
+        {
+          "id": "chomsky-008",
+          "type": "comparison",
+          "difficulty": "hard",
+          "front": "촘스키의 관점에서 볼 때, 현대의 거대 언어 모델(LLM)이 문법 규칙을 배우는 방식과 인간 아이가 언어를 배우는 방식의 가장 큰 차이점은 무엇인가?",
+          "back": "LLM은 통계적 학습(경험주의)에 의존하여 방대한 자극에서 패턴을 추출하지만, 촘스키는 아이들이 '보편 문법'이라는 생득적 지식(합리주의)을 바탕으로 빈약한 자극에서도 언어를 습득한다고 봅니다.",
+          "tags": [
+            "ai",
+            "debate"
+          ],
+          "relatedPages": [
+            "보편 문법",
+            "자극의 빈곤"
+          ]
+        },
+        {
+          "id": "chomsky-009",
+          "type": "cloze",
+          "difficulty": "medium",
+          "front": "촘스키 계층에서 대부분의 프로그래밍 언어나 자연어의 구 구조를 설명하는 데 적합한 수준은 '{{c1:문맥 자유 문법 (Context-Free Grammar)}}'이다.",
+          "back": "문맥 자유 문법 (Context-Free Grammar)",
+          "tags": [
+            "computer_science"
+          ],
+          "relatedPages": [
+            "촘스키 계층"
+          ]
+        },
+        {
+          "id": "chomsky-010",
+          "type": "person",
+          "difficulty": "easy",
+          "front": "현대 언어학의 아버지로 불리며, 1957년 '통사 구조'를 통해 인지 혁명을 주도한 인물은?",
+          "back": "노엄 촘스키 (Noam Chomsky)",
+          "tags": [
+            "history",
+            "person"
+          ],
+          "relatedPages": [
+            "노엄 촘스키"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "006_madaline.json",
+      "source": "006_버나드 위드로와 마션 호프의 MADALINE",
+      "created": "2026-04-20",
+      "cardCount": 10,
+      "cards": [
+        {
+          "id": "madaline_001",
+          "type": "definition",
+          "difficulty": "easy",
+          "front": "MADALINE의 풀네임은 무엇인가요?",
+          "back": "Multiple ADAptive LINear Elements (다중 적응형 선형 소자)",
+          "tags": [
+            "concept",
+            "history"
+          ],
+          "relatedPages": [
+            "MADALINE"
+          ]
+        },
+        {
+          "id": "madaline_002",
+          "type": "definition",
+          "difficulty": "medium",
+          "front": "ADALINE(ADAptive LINear Element)이 퍼셉트론과 구별되는 기술적 핵심 특징은 무엇인가요?",
+          "back": "퍼셉트론은 이진 단계 함수(Step Function)를 사용하여 출력이 0 또는 1이었으나, ADALINE은 가중 합산 결과인 **연속적인 선형 출력**을 학습 과정에서 그대로 유지하여 더 미세한 가중치 조정을 가능하게 했습니다.",
+          "tags": [
+            "concept",
+            "comparison"
+          ],
+          "relatedPages": [
+            "ADALINE",
+            "퍼셉트론"
+          ]
+        },
+        {
+          "id": "madaline_003",
+          "type": "causal",
+          "difficulty": "hard",
+          "front": "LMS 알고리즘(Least Mean Square algorithm)이 당시 하드웨어 환경에서 구현 가능했던 이유는 무엇인가요?",
+          "back": "복잡한 고차원 최적화 대신, 현재 입력 상태에서의 오차 상수를 가중치에 곱하는 **단순한 산술 연산**만으로 제곱 오차를 최소화하는 방향으로 전진하는 경사 하강법을 실현했기 때문입니다.",
+          "tags": [
+            "concept",
+            "algorithm"
+          ],
+          "relatedPages": [
+            "LMS 알고리즘",
+            "경사 하강법"
+          ]
+        },
+        {
+          "id": "madaline_004",
+          "type": "comparison",
+          "difficulty": "medium",
+          "front": "MADALINE이 다층 구조임에도 불구하고 역전파(Backpropagation) 없이 학습이 가능했던 구조적 비결은?",
+          "back": "학습 가능한 **ADALINE 층** 뒤에 AND나 OR와 같은 **고정된 논리 게이트 층**을 결합한 하이브리드 아키텍처를 채택하여, 각 소자가 독립적인 안정성을 유지하며 학습할 수 있도록 설계했기 때문입니다.",
+          "tags": [
+            "concept",
+            "architecture"
+          ],
+          "relatedPages": [
+            "MADALINE",
+            "ADALINE"
+          ]
+        },
+        {
+          "id": "madaline_005",
+          "type": "timeline",
+          "difficulty": "easy",
+          "front": "신경망 기술이 처음으로 학계를 넘어 실제 산업 현장(전화망)에 배치된 사례와 그 기능은?",
+          "back": "1960년대 초 MADALINE 시스템이 **전화 통신망의 에코 제거(Echo Cancellation)** 및 노이즈 억제 기술로 실제 투입되었습니다.",
+          "tags": [
+            "history",
+            "impact"
+          ],
+          "relatedPages": [
+            "MADALINE",
+            "적응형 필터링"
+          ]
+        },
+        {
+          "id": "madaline_006",
+          "type": "person",
+          "difficulty": "easy",
+          "front": "MADALINE을 개발한 스탠퍼드 대학교의 두 명의 주인공은 누구인가요?",
+          "back": "[[버나드 위드로]](Bernard Widrow)와 [[마션 호프]](Marcian Hoff)",
+          "tags": [
+            "entity"
+          ],
+          "relatedPages": [
+            "버나드 위드로",
+            "마션 호프"
+          ]
+        },
+        {
+          "id": "madaline_007",
+          "type": "causal",
+          "difficulty": "medium",
+          "front": "1970년대 'AI의 겨울' 동안 MADALINE이 지식 기반의 명맥을 잇는 데 어떤 역할을 했나요?",
+          "back": "정부의 연구 지원이 중단된 시기에도, 산업 현장에서 실제로 가동 중인 수많은 MADALINE 기반 적응형 필터 시스템들이 **'신경망 기술은 실제로 작동하며 유용하다'**는 가장 강력한 증거가 되어 주었습니다.",
+          "tags": [
+            "history"
+          ],
+          "relatedPages": [
+            "인공지능의 겨울",
+            "MADALINE"
+          ]
+        },
+        {
+          "id": "madaline_008",
+          "type": "cloze",
+          "difficulty": "hard",
+          "front": "MADALINE은 {{c1::특징 공학(Feature Engineering)}}을 자동화하지 못했다는 한계를 가집니다. 즉, 입력 데이터에서 유용한 정보를 추출하는 과정은 인공지능이 아닌 {{c2::엔지니어}}가 직접 설계해야 했습니다.",
+          "back": "c1: 특징 공학(Feature Engineering), c2: 엔지니어",
+          "tags": [
+            "concept",
+            "limitation"
+          ],
+          "relatedPages": [
+            "MADALINE"
+          ]
+        },
+        {
+          "id": "madaline_009",
+          "type": "definition",
+          "difficulty": "medium",
+          "front": "위드로-호프(Widrow-Hoff) 규칙으로도 불리는 알고리즘의 명칭은?",
+          "back": "**LMS 알고리즘** (Least Mean Square algorithm)",
+          "tags": [
+            "algorithm"
+          ],
+          "relatedPages": [
+            "LMS 알고리즘"
+          ]
+        },
+        {
+          "id": "madaline_010",
+          "type": "comparison",
+          "difficulty": "hard",
+          "front": "퍼셉트론의 가중치 업데이트와 LMS 알고리즘의 업데이트 방식의 수학적 지향점 차이는?",
+          "back": "퍼셉트론 규칙은 **분류 경계**를 단순히 이동시키는 데 집중하지만, LMS 알고리즘은 **평균 제곱 오차(Mean Square Error)를 최소화**하는 방향으로 매끄럽게 수렴하는 것을 목표로 합니다.",
+          "tags": [
+            "algorithm",
+            "comparison"
+          ],
+          "relatedPages": [
+            "LMS 알고리즘",
+            "퍼셉트론"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "007_eliza.json",
+      "source": "007_ELIZA - 최초의 대화형 AI 프로그램",
+      "created": "2026-04-21",
+      "cardCount": 8,
+      "cards": [
+        {
+          "id": "eliza_001",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "1966년 조셉 와이젠바움이 개발한 최초의 대화형 AI 프로그램의 이름은 무엇인가?",
+          "back": "ELIZA",
+          "tags": [
+            "domain/ai",
+            "type/concept"
+          ],
+          "relatedPages": [
+            "ELIZA"
+          ]
+        },
+        {
+          "id": "eliza_002",
+          "type": "person",
+          "difficulty": 2,
+          "front": "최초의 대화형 AI인 ELIZA를 개발한 MIT의 컴퓨터 과학자는 누구인가?",
+          "back": "조셉 와이젠바움 (Joseph Weizenbaum)",
+          "tags": [
+            "domain/ai",
+            "type/entity"
+          ],
+          "relatedPages": [
+            "조셉 와이젠바움"
+          ]
+        },
+        {
+          "id": "eliza_003",
+          "type": "concept",
+          "difficulty": 2,
+          "front": "ELIZA에서 가장 널리 알려지고 성공적이었던 심리치료사 시뮬레이션 스크립트의 이름은 무엇인가?",
+          "back": "DOCTOR 스크립트",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "ELIZA"
+          ]
+        },
+        {
+          "id": "eliza_004",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "ELIZA의 DOCTOR 스크립트가 로저스주의(Rogerian) 심리치료를 모방한 이유는 기술적으로 어떤 이점이 있었기 때문인가?",
+          "back": "로저스주의 치료는 지시적 조언보다 환자의 말을 '반사(reflection)'하여 되묻는 방식을 취하므로, 프로그램이 복잡한 지식 베이스나 논리적 추론 없이 단순한 패턴 매칭만으로도 자연스러운 대화를 이끌어낼 수 있었기 때문이다.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "ELIZA",
+            "패턴 매칭"
+          ]
+        },
+        {
+          "id": "eliza_005",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "사람이 기계의 동작이나 응답을 보고, 그 이면에 인간과 유사한 지능, 감정이 존재한다고 착각하여 능력을 과대평가하는 심리적 현상을 무엇이라고 하는가?",
+          "back": "ELIZA 효과 (ELIZA Effect)",
+          "tags": [
+            "domain/ai",
+            "type/concept"
+          ],
+          "relatedPages": [
+            "ELIZA 효과"
+          ]
+        },
+        {
+          "id": "eliza_006",
+          "type": "mechanism",
+          "difficulty": 3,
+          "front": "ELIZA가 사용자의 입력을 분석하고 응답을 생성하기 위해 채택한 핵심 작동 원칙 두 가지는 무엇인가?",
+          "back": "1. 키워드 우선순위 기반 패턴 매칭 (Pattern Matching)\n2. 템플릿 기반 대체와 문법적 치환/반사 (Template-based substitution and reflection)",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "패턴 매칭",
+            "ELIZA"
+          ]
+        },
+        {
+          "id": "eliza_007",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "ELIZA는 입력된 문장의 문법적 오류를 방지하고 사용자가 더 말을 이어나가도록 하기 위해 'I am'을 'Why do you think you are' 등으로 변환하는 [ ...] 기법을 적극 활용했다.",
+          "back": "반사 (Reflection) 또는 문법적 변환",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "ELIZA"
+          ]
+        },
+        {
+          "id": "eliza_008",
+          "type": "concept",
+          "difficulty": 3,
+          "front": "ELIZA가 입력에서 인식할 수 없는 단어나 모호한 상황을 마주했을 때 환상을 깨지 않기 위해 사용한 전략은 무엇인가?",
+          "back": "폴백 전략(Fallback Strategy). '계속해보세요', '이해가 갑니다' 등 중립적이거나 이전 주제를 다시 꺼내는 응답을 활용했다.",
+          "tags": [
+            "domain/ai"
+          ],
+          "relatedPages": [
+            "ELIZA"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "008_viterbi_algorithm.json",
+      "source": "008_앤드류 비터비의 비터비 알고리즘",
+      "created": "2026-04-21",
+      "cardCount": 9,
+      "cards": [
+        {
+          "id": "vit_001",
+          "type": "definition",
+          "difficulty": "easy",
+          "front": "은닉 마르코프 모델 등에서 가장 가능성 높은 은닉 상태 시퀀스를 추론하는 데 활용되는 동적 계획법 기반 알고리즘의 이름은?",
+          "back": "비터비 알고리즘 (Viterbi Algorithm)",
+          "tags": [
+            "algorithm",
+            "decoding"
+          ],
+          "relatedPages": [
+            "비터비 알고리즘",
+            "은닉 마르코프 모델"
+          ]
+        },
+        {
+          "id": "vit_002",
+          "type": "person",
+          "difficulty": "easy",
+          "front": "1967년 비터비 알고리즘을 제안한 미국의 전기 공학자이자 컴퓨터 과학자의 이름은?",
+          "back": "앤드류 비터비 (Andrew Viterbi)",
+          "tags": [
+            "person",
+            "history"
+          ],
+          "relatedPages": [
+            "앤드류 비터비"
+          ]
+        },
+        {
+          "id": "vit_003",
+          "type": "causal",
+          "difficulty": "medium",
+          "front": "비터비 알고리즘에서 매 시점마다 최적의 경로 단 1개만을 남기고 나머지를 버리는 '가지치기(Pruning)'를 수행하는 주된 이유는 무엇인가?",
+          "back": "모든 가능한 경로를 고려하는 전수 조사의 기하급수적 계산 복잡도 $O(N^T)$를 다항 시간인 $O(T \\times N^2)$으로 대폭 줄여 계산을 실현 가능하게 만들기 위해서이다.",
+          "tags": [
+            "optimization",
+            "complexity"
+          ],
+          "relatedPages": [
+            "비터비 알고리즘"
+          ]
+        },
+        {
+          "id": "vit_004",
+          "type": "definition",
+          "difficulty": "medium",
+          "front": "복잡한 문제를 더 단순한 하위 문제들의 해를 결합하고 재귀적으로 골조를 세워서 도출하는 알고리즘 최적화 기법을 무엇이라 하는가?",
+          "back": "동적 계획법 (Dynamic Programming)",
+          "tags": [
+            "algorithm",
+            "concept"
+          ],
+          "relatedPages": [
+            "동적 계획법",
+            "비터비 알고리즘"
+          ]
+        },
+        {
+          "id": "vit_005",
+          "type": "cloze",
+          "difficulty": "medium",
+          "front": "품사 태깅이나 음성 인식 등에서 HMM(은닉 마르코프 모델)을 사용할 때, 겉으로 드러나는 음향이나 단어들은 '{관측치(Observations)}'라 하고, 이로부터 찾아내야 할 품사나 실제 단어의 시퀀스는 '{은닉 상태(Hidden States)}'라고 부른다.",
+          "back": "관측치(Observations), 은닉 상태(Hidden States)",
+          "tags": [
+            "hmm",
+            "nlp"
+          ],
+          "relatedPages": [
+            "은닉 마르코프 모델"
+          ]
+        },
+        {
+          "id": "vit_006",
+          "type": "comparison",
+          "difficulty": "hard",
+          "front": "비터비 알고리즘 과정에서 확률들의 연쇄적인 곱셈을 수행하다 보면 확률값이 극도로 작아져 0에 수렴하는 '수치적 언더플로우'가 발생할 수 있다. 실제 구현 환경에서는 이를 어떻게 방지하는가?",
+          "back": "확률 연산을 '로그 도메인(log domain)'에서 수행하여, 확률 간 곱셈 계산을 로그 확률들의 덧셈 연산으로 변환해 방지한다.",
+          "tags": [
+            "implementation",
+            "math"
+          ],
+          "relatedPages": [
+            "비터비 알고리즘"
+          ]
+        },
+        {
+          "id": "vit_007",
+          "type": "causal",
+          "difficulty": "hard",
+          "front": "비터비 알고리즘과 같은 HMM 기반 디코딩이 '장거리 의존성(Long-range dependency)'을 포착하는 데 근본적인 제약을 갖는 이유는 무엇인가?",
+          "back": "특정 상태의 전이 확률이 전체 과거가 아닌 직전 상태에만 의존한다는 '마르코프 가정(Markov property)'에 치중하기 때문이다.",
+          "tags": [
+            "limitation",
+            "hmm"
+          ],
+          "relatedPages": [
+            "마르코프 가정",
+            "은닉 마르코프 모델"
+          ]
+        },
+        {
+          "id": "vit_008",
+          "type": "comparison",
+          "difficulty": "medium",
+          "front": "유일한 단일 최적해만을 제시하는 표준 비터비 알고리즘의 유연성 부재를 보완하고자, 다각도의 유의미한 가설들을 k개만큼 유지하는 확장 디코딩 기법을 무엇이라고 하는가?",
+          "back": "상위 k개 비터비 알고리즘 (k-best Viterbi)",
+          "tags": [
+            "limitation",
+            "alternatives"
+          ],
+          "relatedPages": [
+            "비터비 알고리즘"
+          ]
+        },
+        {
+          "id": "vit_009",
+          "type": "timeline",
+          "difficulty": "hard",
+          "front": "현대 트랜스포머 아키텍처의 텍스트 생성에서 주로 사용되며, 비터비 알고리즘의 가지치기 전략에서 직접적인 영감을 받아 매 단계 상위 k개의 유망한 줄기만을 보존하는 디코딩 기법은 무엇인가?",
+          "back": "빔 서치 (Beam Search)",
+          "tags": [
+            "modern_ai",
+            "transformers"
+          ],
+          "relatedPages": [
+            "비터비 알고리즘"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "009_shrdlu.json",
+      "source": "009_테리 위노그라드의 SHRDLU",
+      "created": "2026-04-22",
+      "cardCount": 9,
+      "cards": [
+        {
+          "id": "shrdlu_001",
+          "type": "definition",
+          "difficulty": "easy",
+          "front": "1968년 테리 위노그라드가 개발한 시스템으로, 가상의 블록 세계 안에서 영어 명령을 이해하고 객체를 조작하는 초기 자연어 이해 인공지능의 이름은?",
+          "back": "SHRDLU",
+          "tags": [
+            "history",
+            "system"
+          ],
+          "relatedPages": [
+            "SHRDLU",
+            "테리 위노그라드"
+          ]
+        },
+        {
+          "id": "shrdlu_002",
+          "type": "definition",
+          "difficulty": "easy",
+          "front": "SHRDLU가 활동하고 지시를 수행했던, 다양한 색상과 모양의 가상 기하학적 객체들이 존재하는 시뮬레이션된 물리 환경을 무엇이라고 하는가?",
+          "back": "블록 세계 (Blocks World)",
+          "tags": [
+            "environment",
+            "simulation"
+          ],
+          "relatedPages": [
+            "블록 세계",
+            "SHRDLU"
+          ]
+        },
+        {
+          "id": "shrdlu_003",
+          "type": "comparison",
+          "difficulty": "medium",
+          "front": "자연어 대화를 구현한 초창기 두 시스템인 ELIZA와 SHRDLU의 본질적인 차이점은 무엇인가?",
+          "back": "ELIZA는 세계에 대한 내부 이해 없이 템플릿 기반의 '패턴 매칭'을 사용한 반면, SHRDLU는 문법을 해체하고 물리적 세계 모델에 연결하여 객체와 공간에 대해 실제로 추론하고 행동하는 구조를 가졌다.",
+          "tags": [
+            "comparison",
+            "eliza"
+          ],
+          "relatedPages": [
+            "ELIZA",
+            "SHRDLU",
+            "패턴 매칭"
+          ]
+        },
+        {
+          "id": "shrdlu_004",
+          "type": "causal",
+          "difficulty": "medium",
+          "front": "SHRDLU가 \"그것(it)은 ~을 의미한다고 가정합니다\"라고 명시적으로 응답하는 것은 시스템의 어떤 능력을 보여주는 사례인가?",
+          "back": "자신의 추론 과정을 스스로 인식하고 투명하게 설명하는 초인지적 인식(metacognitive awareness) 능력을 보여준다.",
+          "tags": [
+            "cognition",
+            "feature"
+          ],
+          "relatedPages": [
+            "SHRDLU"
+          ]
+        },
+        {
+          "id": "shrdlu_005",
+          "type": "cloze",
+          "difficulty": "medium",
+          "front": "SHRDLU는 특정 제한된 도메인 안에서는 완벽하게 동작하지만 다른 영역(예: 부엌, 도구 상자)으로 확장하려면 지식을 처음부터 다시 프로그래밍해야 한다는 약점을 보였다. 이를 '{도메인 취약성(Domain Brittleness)}'이라 부른다.",
+          "back": "도메인 취약성 (Domain Brittleness)",
+          "tags": [
+            "limitation",
+            "gofai"
+          ],
+          "relatedPages": [
+            "기호주의 인공지능"
+          ]
+        },
+        {
+          "id": "shrdlu_006",
+          "type": "definition",
+          "difficulty": "hard",
+          "front": "어떤 행동이 발생했을 때 그 행동과 무관한 세상의 다른 부분들은 변하지 않고 유지된다는 것을, 기호 논리 시스템이 모두 다 규명하고 처리해야 해서 발생하는 계산의 어려움을 무엇이라 하는가?",
+          "back": "프레임 문제 (Frame Problem)",
+          "tags": [
+            "philosophy",
+            "problem"
+          ],
+          "relatedPages": [
+            "프레임 문제",
+            "기호주의 인공지능"
+          ]
+        },
+        {
+          "id": "shrdlu_007",
+          "type": "definition",
+          "difficulty": "hard",
+          "front": "단순한 기호들의 조작만으로는 그 기호가 외부 물리적 현실의 어떤 의미와 연결되는지 설명할 수 없다는 인지 과학의 근본적인 질문을 무엇이라 하는가?",
+          "back": "기호 접지 문제 (Symbol Grounding Problem)",
+          "tags": [
+            "philosophy",
+            "meaning"
+          ],
+          "relatedPages": [
+            "기호 접지 문제",
+            "체화된 인지"
+          ]
+        },
+        {
+          "id": "shrdlu_008",
+          "type": "causal",
+          "difficulty": "medium",
+          "front": "언어의 의미가 뇌 속의 추상적 기호 처리에 그치지 않고, 물리적 환경과 상호작용하는 신체의 지각 및 행동과 연결될 때 비로소 발생한다는 개념을 무엇이라고 하는가?",
+          "back": "체화된 인지 (Embodied Cognition)",
+          "tags": [
+            "theory",
+            "cognition"
+          ],
+          "relatedPages": [
+            "체화된 인지",
+            "SHRDLU"
+          ]
+        },
+        {
+          "id": "shrdlu_009",
+          "type": "causal",
+          "difficulty": "hard",
+          "front": "SHRDLU의 성공과 그 한계(지식 획득 병목 등)는 인공지능 역사에 어떤 패러다임 전환을 촉진했는가?",
+          "back": "인간이 모든 지식을 수작업으로 입력해야 하는 기호주의 AI(규칙 기반 접근)의 근본적인 한계를 명백히 드러냄으로써, 훗날 데이터를 통해 기계 스스로 패턴을 학습하는 통계적 및 머신러닝 접근 방식으로의 패러다임 전환을 이끄는 계기가 되었다.",
+          "tags": [
+            "history",
+            "paradigm"
+          ],
+          "relatedPages": [
+            "기호주의 인공지능",
+            "SHRDLU"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "010_salton_vsm_tfidf.json",
+      "source": "010_제라드 살튼의 벡터 공간 모델과 TF-IDF 가중치",
+      "created": "2026-04-23",
+      "cardCount": 8,
+      "cards": [
+        {
+          "id": "vsm_tfidf_001",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "1968년 제라드 살튼(Gerard Salton)이 제안한 모델로, 문서와 질의를 다차원 공간 상의 좌표로 표현하여 문서 간 관련성을 계산하는 방법은?",
+          "back": "벡터 공간 모델 (Vector Space Model)",
+          "tags": [
+            "IR",
+            "Salton"
+          ],
+          "relatedPages": [
+            "벡터 공간 모델",
+            "제라드 살튼"
+          ]
+        },
+        {
+          "id": "vsm_tfidf_002",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "벡터 공간 모델에서 두 문서 간의 유사도는 두 벡터가 가리키는 방향의 차이인 {{코사인 유사도(Cosine Similarity)}}를 계산하여 정량화한다.",
+          "back": "문서의 길이에 상관없이 주제의 유사성을 판단할 수 있게 해주는 기하학적 척도입니다.",
+          "tags": [
+            "IR",
+            "Math"
+          ],
+          "relatedPages": [
+            "코사인 유사도"
+          ]
+        },
+        {
+          "id": "vsm_tfidf_003",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "TF-IDF에서 IDF(역문서 빈도)의 목적은 무엇인가?",
+          "back": "거의 모든 문서에 등장하는 흔한 단어(소음)의 가중치를 낮추고, 극소수의 문서에서만 등장하는 변별력 높은 단어의 가중치를 높이기 위함이다.",
+          "tags": [
+            "TF-IDF",
+            "IR"
+          ],
+          "relatedPages": [
+            "TF-IDF"
+          ]
+        },
+        {
+          "id": "vsm_tfidf_004",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "왜 TF-IDF의 IDF 계산 수식에 로그(logarithm) 함수를 적용하는가?",
+          "back": "지프의 법칙(Zipf's Law)에 따른 단어 빈도의 극심한 불균형(멱법칙 분포)을 완화하고, 수치 스케일을 정규화하여 안정적인 가중치 산출을 하기 위해서다.",
+          "tags": [
+            "TF-IDF",
+            "Math"
+          ],
+          "relatedPages": [
+            "TF-IDF"
+          ]
+        },
+        {
+          "id": "vsm_tfidf_005",
+          "type": "comparison",
+          "difficulty": 2,
+          "front": "기존의 '불리언 검색(Boolean Search)'과 '벡터 공간 모델(Vector Space Model)'의 가장 큰 차이점은?",
+          "back": "불리언 검색은 키워드의 일치/불일치(이분법)만 판단하지만, 벡터 공간 모델은 유사도 점수를 스펙트럼으로 수치화하여 문서의 관련도 순위(Ranking)를 매길 수 있다.",
+          "tags": [
+            "IR",
+            "History"
+          ],
+          "relatedPages": [
+            "벡터 공간 모델"
+          ]
+        },
+        {
+          "id": "vsm_tfidf_006",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "텍스트의 문법이나 단어 순서를 무시하고, 오직 단어의 출현 빈도만을 고려하는 표현 방식을 일컫는 용어는?",
+          "back": "단어 가방 모델 (Bag-of-words)",
+          "tags": [
+            "NLP",
+            "Concepts"
+          ],
+          "relatedPages": [
+            "단어 가방 모델"
+          ]
+        },
+        {
+          "id": "vsm_tfidf_007",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "벡터 공간 모델의 치명적인 한계로 지적되는 '단어 독립성(Term Independence)' 가정의 부작용은 무엇인가?",
+          "back": "단어 간의 의미적 유대(동의어)를 파악하지 못해 어휘 불일치 시 검색되지 않으며, 하나의 단어가 갖는 여러 의미(다의어)를 문맥에 맞게 구별하지 못한다.",
+          "tags": [
+            "IR",
+            "Limitations"
+          ],
+          "relatedPages": [
+            "단어 가방 모델",
+            "벡터 공간 모델"
+          ]
+        },
+        {
+          "id": "vsm_tfidf_008",
+          "type": "timeline",
+          "difficulty": 1,
+          "front": "벡터 공간 모델과 TF-IDF 가중치 개념이 확립된 연대는 언제인가?",
+          "back": "1968년",
+          "tags": [
+            "History",
+            "Timeline"
+          ],
+          "relatedPages": [
+            "제라드 살튼",
+            "010_제라드 살튼의 벡터 공간 모델과 TF-IDF 가중치"
+          ]
+        }
+      ]
+    }
+  ]
+}
