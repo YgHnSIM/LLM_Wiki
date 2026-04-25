@@ -1,6 +1,6 @@
 {
-  "version": "2026-04-25T10:53:48.592Z",
-  "totalCards": 68,
+  "version": "2026-04-25T13:19:37.241Z",
+  "totalCards": 80,
   "decks": [
     {
       "fileName": "001_1948_클로드 섀넌_N그램 모델.json",
@@ -1089,6 +1089,195 @@
           "relatedPages": [
             "노엄 촘스키",
             "촘스키에서 대규모 언어 모델로"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "ref_월터 피츠.json",
+      "source": "ref_월터 피츠",
+      "created": "2026-04-25",
+      "cardCount": 12,
+      "cards": [
+        {
+          "id": "ref-pitts-person",
+          "type": "person",
+          "difficulty": 1,
+          "front": "월터 피츠는 AI와 신경망 역사에서 왜 중요한가?",
+          "back": "워런 매컬러와 함께 뉴런을 논리적 계산 단위로 모델링해 인공 신경망, 마음의 계산 이론, 사이버네틱스의 초기 토대를 제공했기 때문이다.",
+          "tags": [
+            "pitts",
+            "ai-history",
+            "neural-network"
+          ],
+          "relatedPages": [
+            "월터 피츠",
+            "맥컬록-피츠 뉴런"
+          ]
+        },
+        {
+          "id": "ref-mcculloch-pitts-neuron",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "맥컬록-피츠 뉴런(McCulloch-Pitts neuron)이란 무엇인가?",
+          "back": "입력이 임계값을 넘으면 발화하고 그렇지 않으면 발화하지 않는 이진 계산 단위로 뉴런을 추상화한 초기 인공 뉴런 모델이다.",
+          "tags": [
+            "mcculloch-pitts",
+            "neuron"
+          ],
+          "relatedPages": [
+            "맥컬록-피츠 뉴런",
+            "인공 신경망"
+          ]
+        },
+        {
+          "id": "ref-logic-gate-comparison",
+          "type": "comparison",
+          "difficulty": 2,
+          "front": "맥컬록-피츠 뉴런과 논리 게이트는 어떤 점에서 연결되는가?",
+          "back": "단순화된 뉴런 연결이 AND, OR, NOT 같은 논리 연산을 구현할 수 있다고 보았기 때문이다.",
+          "tags": [
+            "logic-gate",
+            "neuron"
+          ],
+          "relatedPages": [
+            "논리 게이트",
+            "맥컬록-피츠 뉴런"
+          ]
+        },
+        {
+          "id": "ref-feedback-memory",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "피드백 루프가 기억의 모델과 연결되는 이유는 무엇인가?",
+          "back": "출력이 다시 입력으로 돌아오면 정보가 시스템 안에서 순환하며 유지될 수 있어, 사건이 사라진 뒤에도 활동 패턴이 남을 수 있기 때문이다.",
+          "tags": [
+            "feedback-loop",
+            "memory"
+          ],
+          "relatedPages": [
+            "피드백 루프",
+            "마음의 계산 이론"
+          ]
+        },
+        {
+          "id": "ref-cybernetics-definition",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "사이버네틱스(cybernetics)는 무엇을 연구하려 한 흐름인가?",
+          "back": "생명체와 기계를 정보, 제어, 통신, 피드백이라는 공통 원리로 이해하려 한 학제적 흐름이다.",
+          "tags": [
+            "cybernetics",
+            "feedback"
+          ],
+          "relatedPages": [
+            "사이버네틱스",
+            "피드백 루프"
+          ]
+        },
+        {
+          "id": "ref-stored-program",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "프로그램 내장형 컴퓨터(stored-program computer)의 핵심 아이디어는 무엇인가?",
+          "back": "명령어와 데이터를 같은 메모리에 저장해, 배선을 다시 바꾸지 않고 프로그램을 바꾸어 여러 계산을 수행하는 것이다.",
+          "tags": [
+            "stored-program",
+            "computer-history"
+          ],
+          "relatedPages": [
+            "프로그램 내장형 컴퓨터",
+            "논리 게이트"
+          ]
+        },
+        {
+          "id": "ref-frog-eye-causal",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "개구리 눈 실험이 순수 논리 중심 뇌 모델에 도전한 이유는 무엇인가?",
+          "back": "눈이 단순히 빛을 전달하는 센서가 아니라 움직임과 대비 같은 특징을 이미 추출하는 능동적 정보 처리 장치임을 보여 주었기 때문이다.",
+          "tags": [
+            "frog-eye",
+            "neuroscience"
+          ],
+          "relatedPages": [
+            "월터 피츠",
+            "맥컬록-피츠에서 현대 신경망으로"
+          ]
+        },
+        {
+          "id": "ref-connectionism",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "연결주의(connectionism)는 지능을 어떻게 설명하려는 관점인가?",
+          "back": "많은 단순 단위들의 연결, 가중치, 활성 패턴에서 복잡한 지능이 나타난다고 보는 관점이다.",
+          "tags": [
+            "connectionism",
+            "neural-network"
+          ],
+          "relatedPages": [
+            "연결주의",
+            "인공 신경망"
+          ]
+        },
+        {
+          "id": "ref-neuromorphic",
+          "type": "definition",
+          "difficulty": 3,
+          "front": "뉴로모픽 컴퓨팅(neuromorphic computing)은 무엇인가?",
+          "back": "뇌의 신경 구조와 발화 방식을 참고해 저전력, 사건 기반 계산 하드웨어와 알고리즘을 설계하려는 접근이다.",
+          "tags": [
+            "neuromorphic",
+            "spiking-neural-network"
+          ],
+          "relatedPages": [
+            "뉴로모픽 컴퓨팅",
+            "인공 신경망"
+          ]
+        },
+        {
+          "id": "ref-pitts-to-deep-learning",
+          "type": "timeline",
+          "difficulty": 2,
+          "front": "피츠 자료가 보여 주는 신경망 계보를 간단히 순서대로 말해 보라.",
+          "back": "맥컬록-피츠 뉴런 -> 퍼셉트론 -> 다층 퍼셉트론과 역전파 -> 딥러닝과 대규모 언어 모델.",
+          "tags": [
+            "timeline",
+            "deep-learning"
+          ],
+          "relatedPages": [
+            "맥컬록-피츠에서 현대 신경망으로",
+            "퍼셉트론에서 딥러닝으로"
+          ]
+        },
+        {
+          "id": "ref-abstraction-limit",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "맥컬록-피츠 모델이 생산적인 단순화이면서도 한계를 가진 이유는 무엇인가?",
+          "back": "뉴런을 논리 단위로 단순화해 마음과 계산을 연결하는 강력한 언어를 만들었지만, 실제 뇌의 아날로그성, 감각 처리, 생물학적 복잡성을 충분히 담지 못했기 때문이다.",
+          "tags": [
+            "abstraction",
+            "model-limit"
+          ],
+          "relatedPages": [
+            "맥컬록-피츠 뉴런",
+            "뉴로모픽 컴퓨팅"
+          ]
+        },
+        {
+          "id": "ref-logic-connection-cloze",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "피츠의 유산은 {{c1::논리}}와 {{c2::신경 연결}}을 같은 계산 문제로 묶으려 했다는 점에 있다.",
+          "back": "이 긴장은 오늘날 뉴로심볼릭 AI와 연결주의 논쟁에서도 계속된다.",
+          "tags": [
+            "logic",
+            "connectionism"
+          ],
+          "relatedPages": [
+            "마음의 계산 이론",
+            "연결주의"
           ]
         }
       ]

@@ -55,7 +55,7 @@ status: draft | active | review | archived
 ### 2.3 태그 체계
 | 접두사 | 용도 | 예시 |
 |--------|------|------|
-| `type/` | 페이지 유형 | `type/source`, `type/entity`, `type/concept`, `type/analysis` |
+| `type/` | 페이지 유형 | `type/source`, `type/reference`, `type/entity`, `type/concept`, `type/analysis` |
 | `domain/` | 주제 영역 | `domain/ai`, `domain/geopolitics`, `domain/economics` |
 | `status/` | 상태 | `status/draft`, `status/active`, `status/review` |
 
@@ -70,6 +70,7 @@ status: draft | active | review | archived
 	- 예시 
 		- `ingest: 001_Claude Shannon's N-gram Model` 
 		- `ingest: 002_Alan Turing's Imitation Game`
+	- 정규 번호 소스가 아닌 참고 자료 보강은 `reference: short_title` 형식을 사용
 
 ## 3. 핵심 워크플로
 
@@ -98,6 +99,24 @@ status: draft | active | review | archived
 6. **필요시 새 페이지 생성** — 새 개체/개념이 등장하면 페이지 생성
 7. **index.md 업데이트** — 새 페이지 추가, 기존 항목 요약 갱신
 8. **log.md 기록** — 작업 내용 추가
+
+### 3.1.1 참고 자료 보강 (Reference)
+
+사용자가 정규 번호 소스가 아닌 보충 참고 자료를 `raw/`에 추가하고 처리를 요청하면:
+
+1. **정규 Ingest와 분리** — `NNN_연도_인물_주제` 번호를 새로 만들지 않음
+2. **참고 요약 페이지 작성** — `wiki/sources/ref_slug.md` 형식으로 생성
+   - 프론트매터 `tags`에는 `type/reference` 포함
+   - `sources`에는 원본 raw 파일명을 그대로 기록
+   - 본문 하단 `## 출처`에는 raw 파일 경로를 표시
+3. **기존 페이지 보강 중심** — 새 지식이 주로 보충하는 기존 개체·개념·분석 페이지를 갱신
+4. **필요시 새 페이지 생성** — 참고 자료가 독립 개념을 충분히 제공할 때만 새 페이지 생성
+5. **퀴즈 카드 생성** — `quiz/cards/ref_slug.json` 형식으로 생성
+   - 참고 자료당 8~12장 권장
+   - 기존 카드와 중복되지 않도록 개념 연결 중심으로 작성
+6. **index.md 업데이트** — 정규 `소스 (Sources)`와 별도로 `참고 자료 (References)` 섹션에 추가
+7. **overview.md 업데이트** — 정규 소스 수와 참고 자료 수를 구분해 표시
+8. **log.md 기록** — 작업유형은 `reference` 사용
 
 ### 3.2 질의 (Query)
 
@@ -132,6 +151,7 @@ status: draft | active | review | archived
 - 시간순 기록, 최신이 아래로
 - 형식: `## [YYYY-MM-DD] 작업유형 | 제목`
   - 작업유형: `ingest`, `query`, `lint`, `create`, `update`
+  - 참고 자료 보강은 `reference` 사용
 - 각 항목에 변경된 페이지 목록 포함
 
 ### 4.3 overview.md
