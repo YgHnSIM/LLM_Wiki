@@ -1,0 +1,132 @@
+{
+  "source": "003_1954_조지타운-IBM_기계번역.md",
+  "created": "2026-04-25",
+  "cards": [
+    {
+      "id": "003-georgetown-ibm-definition",
+      "type": "definition",
+      "difficulty": 1,
+      "front": "조지타운-IBM 기계번역 시연은 무엇인가?",
+      "back": "1954년 1월 7일 조지타운 대학교와 IBM이 IBM 701로 러시아어 문장 60개를 영어로 번역한 공개 시연이다. 초기 기계번역과 계산언어학의 중요한 사건이다.",
+      "tags": ["machine-translation", "ai-history", "georgetown-ibm"],
+      "relatedPages": ["조지타운-IBM 기계번역 시연", "기계번역"]
+    },
+    {
+      "id": "003-machine-translation-definition",
+      "type": "definition",
+      "difficulty": 1,
+      "front": "기계번역(machine translation)이란 무엇인가?",
+      "back": "한 언어의 텍스트를 다른 언어의 텍스트로 자동 변환하는 기술이다.",
+      "tags": ["machine-translation", "definition"],
+      "relatedPages": ["기계번역"]
+    },
+    {
+      "id": "003-demo-gap-causal",
+      "type": "causal",
+      "difficulty": 2,
+      "front": "조지타운-IBM 시연이 AI 평가의 중요한 교훈으로 남은 이유는 무엇인가?",
+      "back": "시연 문장이 시스템의 강점에 맞게 미리 선택되었기 때문이다. 데모 성공이 실제 세계의 다양한 입력에서 일반화된 성능을 보장하지 않는다는 점을 보여 주었다.",
+      "tags": ["benchmark", "demo", "ai-evaluation"],
+      "relatedPages": ["조지타운-IBM 기계번역 시연", "벤치마크"]
+    },
+    {
+      "id": "003-rule-based-translation-definition",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "규칙 기반 번역(RBMT)은 무엇인가?",
+      "back": "사람이 만든 사전과 문법 규칙을 이용해 원천 언어 문장을 목표 언어 문장으로 변환하는 방식이다.",
+      "tags": ["rule-based-translation", "machine-translation"],
+      "relatedPages": ["규칙 기반 번역", "사전 기반 접근"]
+    },
+    {
+      "id": "003-dictionary-based-cloze",
+      "type": "cloze",
+      "difficulty": 2,
+      "front": "조지타운-IBM 시스템은 {{c1::사전 기반 접근}}과 {{c2::구문 규칙}}을 결합해 러시아어 문장을 영어로 번역했다.",
+      "back": "단어를 사전에서 찾고, 품사·성·격 같은 문법 정보와 어순 변환 규칙을 사용했다.",
+      "tags": ["dictionary-based", "syntax-rules"],
+      "relatedPages": ["사전 기반 접근", "구문 규칙"]
+    },
+    {
+      "id": "003-case-definition",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "격(case)은 기계번역에서 왜 중요한가?",
+      "back": "격은 명사나 대명사가 문장 안에서 어떤 역할을 하는지 표시한다. 러시아어처럼 격 표시가 풍부한 언어에서는 주어와 목적어 관계를 파악해 영어 어순으로 재배열하는 단서가 된다.",
+      "tags": ["case", "morphology", "syntax"],
+      "relatedPages": ["격", "형태론", "구문 규칙"]
+    },
+    {
+      "id": "003-ambiguity-resolution-definition",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "모호성 해소(ambiguity resolution)란 무엇인가?",
+      "back": "단어, 구문, 의미의 여러 가능한 해석 중 문맥에 맞는 해석을 고르는 과정이다. 초기 기계번역 시스템은 이 문제를 효과적으로 처리하기 어려웠다.",
+      "tags": ["ambiguity-resolution", "nlp"],
+      "relatedPages": ["모호성 해소", "기계번역"]
+    },
+    {
+      "id": "003-knowledge-bottleneck-causal",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "규칙 기반 기계번역에서 지식 공학 병목이 생기는 이유는 무엇인가?",
+      "back": "언어쌍과 분야마다 사람이 사전, 용어, 문법 규칙을 직접 구축하고 유지해야 하기 때문이다. 범위가 넓어질수록 필요한 인간 노력이 빠르게 커진다.",
+      "tags": ["knowledge-engineering-bottleneck", "rule-based-ai"],
+      "relatedPages": ["지식 공학 병목", "규칙 기반 번역"]
+    },
+    {
+      "id": "003-post-editing-definition",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "후편집(post-editing)은 무엇인가?",
+      "back": "기계가 만든 번역 초안을 인간 번역가가 수정하고 다듬는 작업이다. 완전 자동 번역이 부족할 때 실용적인 인간 참여형 워크플로우가 된다.",
+      "tags": ["post-editing", "translation-workflow"],
+      "relatedPages": ["후편집", "기계번역"]
+    },
+    {
+      "id": "003-rule-to-neural-comparison",
+      "type": "comparison",
+      "difficulty": 3,
+      "front": "규칙 기반 번역과 신경망 기계번역의 핵심 차이는 무엇인가?",
+      "back": "규칙 기반 번역은 사람이 만든 사전과 규칙에 의존한다. 신경망 기계번역은 병렬 말뭉치에서 번역 패턴과 표현을 학습한다.",
+      "tags": ["rbmt", "nmt", "comparison"],
+      "relatedPages": ["규칙 기반 번역", "신경망 기계번역", "병렬 말뭉치"]
+    },
+    {
+      "id": "003-parallel-corpus-definition",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "병렬 말뭉치(parallel corpus)란 무엇인가?",
+      "back": "같은 내용을 두 개 이상의 언어로 나란히 담은 번역 데이터다. 현대 신경망 기계번역은 이 데이터에서 번역 대응 관계를 학습한다.",
+      "tags": ["parallel-corpus", "nmt"],
+      "relatedPages": ["병렬 말뭉치", "신경망 기계번역"]
+    },
+    {
+      "id": "003-nmt-limitations",
+      "type": "comparison",
+      "difficulty": 3,
+      "front": "신경망 기계번역이 좋아졌어도 여전히 주의해야 할 문제는 무엇인가?",
+      "back": "유창한 번역이 항상 정확한 번역은 아니다. 원문 정보 누락, 없는 정보 추가, 전문 용어 불일치, 문서 전체 일관성, 저자원 언어 문제가 남아 있다.",
+      "tags": ["nmt", "limitations", "evaluation"],
+      "relatedPages": ["신경망 기계번역", "모호성 해소"]
+    },
+    {
+      "id": "003-timeline",
+      "type": "timeline",
+      "difficulty": 2,
+      "front": "이 소스가 설명하는 기계번역 발전 흐름을 순서대로 말해 보라.",
+      "back": "1954년 조지타운-IBM 공개 시연 -> 규칙 기반 번역과 사전 구축 -> 실제 문서에서 한계와 지식 공학 병목 발견 -> 병렬 말뭉치 기반 데이터 학습 -> 신경망 기계번역과 LLM 기반 번역 워크플로우.",
+      "tags": ["timeline", "machine-translation-history"],
+      "relatedPages": ["규칙 기반 번역에서 신경망 기계번역으로", "기계번역"]
+    },
+    {
+      "id": "003-ai-methodology-comparison",
+      "type": "comparison",
+      "difficulty": 3,
+      "front": "조지타운-IBM 시연은 AI 방법론 변화에서 어떤 의미를 갖는가?",
+      "back": "사람이 규칙과 지식을 직접 넣는 지식 공학 방식의 가능성과 한계를 동시에 보여 주었다. 이후 AI는 데이터에서 패턴을 학습하는 머신러닝 방향으로 이동했다.",
+      "tags": ["ai-methodology", "machine-learning", "knowledge-engineering"],
+      "relatedPages": ["지식 공학 병목", "머신러닝", "규칙 기반 번역에서 신경망 기계번역으로"]
+    }
+  ]
+}
