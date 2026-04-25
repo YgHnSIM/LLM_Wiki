@@ -1,6 +1,6 @@
 {
-  "version": "2026-04-25T00:59:39.511Z",
-  "totalCards": 53,
+  "version": "2026-04-25T10:53:48.592Z",
+  "totalCards": 68,
   "decks": [
     {
       "fileName": "001_1948_클로드 섀넌_N그램 모델.json",
@@ -852,6 +852,243 @@
             "머신러닝",
             "퍼셉트론",
             "지식 공학 병목"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "005_1957_노엄 촘스키_통사 구조.json",
+      "source": "005_1957_노엄 촘스키_통사 구조.md",
+      "created": "2026-04-25",
+      "cardCount": 15,
+      "cards": [
+        {
+          "id": "005-chomsky-person",
+          "type": "person",
+          "difficulty": 1,
+          "front": "노엄 촘스키는 언어 AI 역사에서 왜 중요한가?",
+          "back": "언어를 단순한 단어 나열이나 학습된 습관이 아니라, 형식적으로 기술 가능한 위계적 규칙 체계로 보게 만든 연구자다.",
+          "tags": [
+            "chomsky",
+            "linguistics",
+            "ai-history"
+          ],
+          "relatedPages": [
+            "노엄 촘스키",
+            "통사론"
+          ]
+        },
+        {
+          "id": "005-syntax-definition",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "통사론(syntax)이란 무엇인가?",
+          "back": "단어들이 결합해 구와 문장을 이루는 규칙과 구조를 연구하는 분야다.",
+          "tags": [
+            "syntax",
+            "definition"
+          ],
+          "relatedPages": [
+            "통사론",
+            "통사 구조"
+          ]
+        },
+        {
+          "id": "005-finite-state-limit",
+          "type": "causal",
+          "difficulty": 2,
+          "front": "촘스키가 유한상태 모델만으로 자연어를 설명하기 어렵다고 본 이유는 무엇인가?",
+          "back": "자연어에는 중첩 의존성과 재귀 구조가 있어, 현재 상태만 들고 가는 선형 모델로는 임의 깊이의 구조를 안정적으로 추적하기 어렵기 때문이다.",
+          "tags": [
+            "finite-state",
+            "recursion"
+          ],
+          "relatedPages": [
+            "유한상태 모델",
+            "재귀"
+          ]
+        },
+        {
+          "id": "005-deep-surface-comparison",
+          "type": "comparison",
+          "difficulty": 2,
+          "front": "심층 구조와 표층 구조의 차이는 무엇인가?",
+          "back": "표층 구조는 실제 단어들의 선형 순서이고, 심층 구조는 그 밑의 위계적 문법 관계와 의미 구조다.",
+          "tags": [
+            "deep-structure",
+            "surface-structure"
+          ],
+          "relatedPages": [
+            "심층 구조",
+            "표층 구조",
+            "변형생성문법"
+          ]
+        },
+        {
+          "id": "005-generative-grammar-definition",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "변형생성문법(transformational generative grammar)의 핵심 생각은 무엇인가?",
+          "back": "유한한 문법 규칙이 심층 구조와 변형 규칙을 통해 무한히 많은 문법적 문장을 생성할 수 있다는 생각이다.",
+          "tags": [
+            "generative-grammar",
+            "syntax"
+          ],
+          "relatedPages": [
+            "변형생성문법",
+            "재귀"
+          ]
+        },
+        {
+          "id": "005-poverty-stimulus",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "자극의 빈곤(poverty of the stimulus)이란 무엇인가?",
+          "back": "아이들이 받는 언어 입력이 불완전하고 제한적인데도 복잡한 문법 지식을 빠르게 습득한다는 논증이다.",
+          "tags": [
+            "language-acquisition",
+            "chomsky"
+          ],
+          "relatedPages": [
+            "자극의 빈곤",
+            "보편문법"
+          ]
+        },
+        {
+          "id": "005-universal-grammar",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "보편문법(Universal Grammar)은 무엇인가?",
+          "back": "인간이 언어 습득을 위해 선천적으로 갖는다고 가정되는 일반 문법 원리와 제약의 집합이다.",
+          "tags": [
+            "universal-grammar",
+            "language-acquisition"
+          ],
+          "relatedPages": [
+            "보편문법",
+            "노엄 촘스키"
+          ]
+        },
+        {
+          "id": "005-cfg-definition",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "문맥자유문법(context-free grammar)은 무엇을 표현하는가?",
+          "back": "문장을 구와 하위 구로 분해하는 재작성 규칙을 통해 위계적 통사 구조를 표현한다.",
+          "tags": [
+            "cfg",
+            "parsing"
+          ],
+          "relatedPages": [
+            "문맥자유문법",
+            "파싱"
+          ]
+        },
+        {
+          "id": "005-chomsky-hierarchy-timeline",
+          "type": "timeline",
+          "difficulty": 3,
+          "front": "촘스키 위계에서 약한 문법에서 강한 문법으로 가는 대표 순서를 말해 보라.",
+          "back": "정규문법 -> 문맥자유문법 -> 문맥의존문법 -> 무제한문법 순으로 생성력이 커진다.",
+          "tags": [
+            "chomsky-hierarchy",
+            "formal-language"
+          ],
+          "relatedPages": [
+            "촘스키 위계",
+            "문맥자유문법"
+          ]
+        },
+        {
+          "id": "005-parsing-definition",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "파싱(parsing)이란 무엇인가?",
+          "back": "문장의 문법 구조를 분석해 통사 트리나 의존 관계 같은 구조 표현을 만드는 과정이다.",
+          "tags": [
+            "parsing",
+            "nlp"
+          ],
+          "relatedPages": [
+            "파싱",
+            "통사 구조"
+          ]
+        },
+        {
+          "id": "005-cognitive-revolution-causal",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "촘스키의 스키너 비판이 인지 혁명과 연결되는 이유는 무엇인가?",
+          "back": "언어를 자극-반응만으로 설명하기 어렵다고 주장하면서 내부 표상, 규칙, 계산 과정을 연구 대상으로 삼는 관점을 강화했기 때문이다.",
+          "tags": [
+            "cognitive-revolution",
+            "behaviorism"
+          ],
+          "relatedPages": [
+            "인지 혁명",
+            "B.F. 스키너",
+            "마음의 계산 이론"
+          ]
+        },
+        {
+          "id": "005-llm-comparison",
+          "type": "comparison",
+          "difficulty": 3,
+          "front": "촘스키식 규칙 기반 언어관과 현대 LLM 접근의 핵심 차이는 무엇인가?",
+          "back": "촘스키식 접근은 명시적 구조와 규칙을 강조하지만, LLM은 방대한 데이터에서 통계적으로 언어 패턴과 구조를 학습한다.",
+          "tags": [
+            "llm",
+            "chomsky",
+            "comparison"
+          ],
+          "relatedPages": [
+            "촘스키에서 대규모 언어 모델로",
+            "대규모 언어 모델"
+          ]
+        },
+        {
+          "id": "005-compositionality-cloze",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "{{c1::합성성}}은 전체 의미가 부분들의 의미와 {{c2::결합 방식}}에서 나온다는 원리다.",
+          "back": "합성성은 문장을 단어 목록이 아니라 구조화된 표현으로 보게 만든다.",
+          "tags": [
+            "compositionality",
+            "syntax"
+          ],
+          "relatedPages": [
+            "합성성",
+            "통사 구조"
+          ]
+        },
+        {
+          "id": "005-rule-statistics-synthesis",
+          "type": "comparison",
+          "difficulty": 3,
+          "front": "규칙 기반 접근과 통계적 접근을 단순한 승패로 보기 어려운 이유는 무엇인가?",
+          "back": "규칙 기반 접근은 구조와 설명 가능성을 제공하지만 확장성이 약하고, 통계적 접근은 데이터에서 강건하게 학습하지만 구조적 일반화와 의미 안정성에서 한계를 보일 수 있기 때문이다.",
+          "tags": [
+            "rule-based",
+            "statistical-nlp"
+          ],
+          "relatedPages": [
+            "촘스키에서 대규모 언어 모델로",
+            "N그램에서 신경망 언어 모델로"
+          ]
+        },
+        {
+          "id": "005-legacy",
+          "type": "causal",
+          "difficulty": 2,
+          "front": "촘스키의 원래 이론이 많이 수정되었는데도 그의 영향이 남아 있는 이유는 무엇인가?",
+          "back": "언어의 구조, 재귀, 합성성, 습득, 의미 이해를 어떻게 설명할지라는 질문이 현대 NLP와 LLM 연구에도 계속 남아 있기 때문이다.",
+          "tags": [
+            "legacy",
+            "nlp-history"
+          ],
+          "relatedPages": [
+            "노엄 촘스키",
+            "촘스키에서 대규모 언어 모델로"
           ]
         }
       ]
