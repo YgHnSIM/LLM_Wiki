@@ -39,3 +39,7 @@
 - 기존 페이지 갱신: [[머신러닝]], [[대규모 언어 모델]], [[N그램에서 신경망 언어 모델로]]
 - 퀴즈 카드 생성: quiz/cards/004_1958_프랭크 로젠블랫_퍼셉트론.json
 - index.md 및 overview.md 갱신
+## [2026-04-25] update | 출처 표기 방식 정리
+- AGENTS.md 작성 원칙 갱신: 반복 인라인 소스 표기 대신 프론트매터와 하단 `## 출처` 섹션 사용
+- concepts, entities, analyses 페이지의 반복 `소스 페이지` 인라인 표기 제거
+- concepts, entities, analyses, sources 항목 페이지에 하단 `## 출처` 섹션 추가
