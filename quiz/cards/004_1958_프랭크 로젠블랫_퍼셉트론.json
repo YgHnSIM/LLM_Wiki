@@ -1,0 +1,132 @@
+{
+  "source": "004_1958_프랭크 로젠블랫_퍼셉트론.md",
+  "created": "2026-04-25",
+  "cards": [
+    {
+      "id": "004-perceptron-definition",
+      "type": "definition",
+      "difficulty": 1,
+      "front": "퍼셉트론(perceptron)이란 무엇인가?",
+      "back": "입력의 가중합과 임계 함수를 이용해 이진 분류를 수행하는 초기 인공 신경망 모델이다.",
+      "tags": ["perceptron", "neural-network", "definition"],
+      "relatedPages": ["퍼셉트론", "인공 신경망"]
+    },
+    {
+      "id": "004-rosenblatt-person",
+      "type": "person",
+      "difficulty": 1,
+      "front": "프랭크 로젠블랫은 AI 역사에서 무엇으로 중요한가?",
+      "back": "1958년 퍼셉트론을 제안해 기계가 명시적 규칙이 아니라 예시에서 패턴을 학습할 수 있음을 보여 준 연구자다.",
+      "tags": ["rosenblatt", "ai-history"],
+      "relatedPages": ["프랭크 로젠블랫", "퍼셉트론"]
+    },
+    {
+      "id": "004-perceptron-formula-cloze",
+      "type": "cloze",
+      "difficulty": 2,
+      "front": "퍼셉트론은 입력에 {{c1::가중치}}를 곱해 더하고 {{c2::편향}}을 더한 뒤 {{c3::활성화 함수}}를 적용해 출력을 만든다.",
+      "back": "수식으로는 대략 y = f(sum(w_i x_i) + b)로 표현된다.",
+      "tags": ["perceptron", "formula"],
+      "relatedPages": ["퍼셉트론", "가중치", "편향", "활성화 함수"]
+    },
+    {
+      "id": "004-decision-boundary-definition",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "결정 경계(decision boundary)는 무엇인가?",
+      "back": "분류 모델이 서로 다른 클래스를 나누는 선, 평면, 또는 초평면이다. 퍼셉트론 학습은 이 경계를 올바른 위치로 움직이는 과정으로 볼 수 있다.",
+      "tags": ["decision-boundary", "linear-classifier"],
+      "relatedPages": ["결정 경계", "선형 분류기"]
+    },
+    {
+      "id": "004-supervised-learning-causal",
+      "type": "causal",
+      "difficulty": 2,
+      "front": "퍼셉트론이 지도학습의 초기 사례로 볼 수 있는 이유는 무엇인가?",
+      "back": "입력과 정답 레이블을 함께 받고, 예측이 틀리면 오류를 줄이는 방향으로 가중치를 조정하기 때문이다.",
+      "tags": ["supervised-learning", "perceptron"],
+      "relatedPages": ["지도학습", "퍼셉트론"]
+    },
+    {
+      "id": "004-learning-rate-definition",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "학습률(learning rate)은 무엇을 조절하는가?",
+      "back": "오류에 반응해 가중치를 얼마나 크게 바꿀지 조절한다. 너무 크면 불안정할 수 있고, 너무 작으면 학습이 느려질 수 있다.",
+      "tags": ["learning-rate", "optimization"],
+      "relatedPages": ["학습률", "가중치"]
+    },
+    {
+      "id": "004-linear-separability-definition",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "선형 분리 가능성(linear separability)이란 무엇인가?",
+      "back": "하나의 선형 결정 경계로 두 클래스를 완벽히 나눌 수 있는 성질이다. 단층 퍼셉트론은 선형 분리 가능한 문제에 강하다.",
+      "tags": ["linear-separability", "perceptron"],
+      "relatedPages": ["선형 분리 가능성", "퍼셉트론"]
+    },
+    {
+      "id": "004-xor-problem-causal",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "XOR 문제가 단층 퍼셉트론의 한계를 보여 주는 이유는 무엇인가?",
+      "back": "XOR의 양성 예시와 음성 예시는 하나의 직선으로 나눌 수 없기 때문이다. 따라서 단층 퍼셉트론은 아무리 훈련해도 XOR을 완벽히 학습할 수 없다.",
+      "tags": ["xor", "linear-separability"],
+      "relatedPages": ["XOR 문제", "선형 분리 가능성"]
+    },
+    {
+      "id": "004-mlp-comparison",
+      "type": "comparison",
+      "difficulty": 3,
+      "front": "단층 퍼셉트론과 다층 퍼셉트론의 핵심 차이는 무엇인가?",
+      "back": "단층 퍼셉트론은 하나의 선형 경계만 학습한다. 다층 퍼셉트론은 은닉층과 비선형 활성화를 사용해 XOR 같은 비선형 패턴도 학습할 수 있다.",
+      "tags": ["perceptron", "mlp", "comparison"],
+      "relatedPages": ["퍼셉트론", "다층 퍼셉트론"]
+    },
+    {
+      "id": "004-backprop-definition",
+      "type": "definition",
+      "difficulty": 3,
+      "front": "역전파(backpropagation)는 무엇을 가능하게 했는가?",
+      "back": "다층 신경망에서 오류 정보를 뒤로 전달해 각 층의 가중치를 효율적으로 갱신할 수 있게 했다.",
+      "tags": ["backpropagation", "deep-learning"],
+      "relatedPages": ["역전파", "딥러닝"]
+    },
+    {
+      "id": "004-ai-winter-causal",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "퍼셉트론의 한계가 AI 겨울과 연결되는 이유는 무엇인가?",
+      "back": "XOR과 선형 분리 한계가 널리 알려지며 신경망에 대한 낙관이 약화되었고, 연구 자금과 관심 감소에 영향을 주었기 때문이다. 다만 하드웨어와 연구 환경 등 여러 요인이 함께 작용했다.",
+      "tags": ["ai-winter", "perceptron-history"],
+      "relatedPages": ["AI 겨울", "XOR 문제", "퍼셉트론"]
+    },
+    {
+      "id": "004-legacy-llm",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "현대 LLM에도 퍼셉트론의 흔적이 남아 있다고 말할 수 있는 이유는 무엇인가?",
+      "back": "LLM 내부에도 선형층, 가중치 행렬, 편향, 비선형 활성화, 손실을 줄이는 반복적 최적화가 사용되기 때문이다.",
+      "tags": ["llm", "deep-learning", "perceptron"],
+      "relatedPages": ["대규모 언어 모델", "퍼셉트론에서 딥러닝으로"]
+    },
+    {
+      "id": "004-timeline",
+      "type": "timeline",
+      "difficulty": 2,
+      "front": "이 소스가 설명하는 신경망 발전 흐름을 순서대로 말해 보라.",
+      "back": "매컬러-피츠 인공 뉴런 -> 로젠블랫의 퍼셉트론 -> XOR과 선형 분리 한계 인식 -> 다층 퍼셉트론과 역전파 -> 딥러닝과 현대 대규모 언어 모델.",
+      "tags": ["timeline", "neural-network-history"],
+      "relatedPages": ["퍼셉트론에서 딥러닝으로", "퍼셉트론"]
+    },
+    {
+      "id": "004-rule-to-learning-comparison",
+      "type": "comparison",
+      "difficulty": 2,
+      "front": "퍼셉트론은 규칙 기반 AI와 어떤 점에서 달랐는가?",
+      "back": "규칙 기반 AI는 사람이 판단 규칙을 직접 작성하지만, 퍼셉트론은 레이블이 붙은 예시를 보고 가중치를 조정해 분류 기준을 학습했다.",
+      "tags": ["machine-learning", "rule-based-ai"],
+      "relatedPages": ["머신러닝", "퍼셉트론", "지식 공학 병목"]
+    }
+  ]
+}
