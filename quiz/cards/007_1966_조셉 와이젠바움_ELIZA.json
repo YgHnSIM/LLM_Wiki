@@ -1,0 +1,114 @@
+{
+  "source": "007_1966_조셉 와이젠바움_ELIZA",
+  "created": "2026-04-27",
+  "cards": [
+    {
+      "id": "007-eliza-definition",
+      "type": "definition",
+      "difficulty": 1,
+      "front": "ELIZA는 무엇인가?",
+      "back": "조셉 와이젠바움이 1966년에 발표한 초기 자연어 대화 프로그램으로, 패턴 매칭과 템플릿 응답으로 사용자가 이해받는 듯한 대화를 만들었다.",
+      "tags": ["eliza", "chatbot", "nlp"],
+      "relatedPages": ["ELIZA", "조셉 와이젠바움"]
+    },
+    {
+      "id": "007-doctor-script",
+      "type": "definition",
+      "difficulty": 1,
+      "front": "DOCTOR 스크립트는 어떤 역할을 흉내 냈는가?",
+      "back": "로저스식 심리치료사를 흉내 내어 사용자의 말을 반영하고 개방형 질문을 던지는 방식으로 대화를 이어 갔다.",
+      "tags": ["doctor-script", "rogerian-therapy"],
+      "relatedPages": ["DOCTOR 스크립트", "로저스식 치료"]
+    },
+    {
+      "id": "007-eliza-effect",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "ELIZA 효과(ELIZA Effect)란 무엇인가?",
+      "back": "컴퓨터의 표면적 행동에 인간적 이해, 감정, 의도, 통찰을 과도하게 귀속하는 경향이다.",
+      "tags": ["eliza-effect", "hci", "safety"],
+      "relatedPages": ["ELIZA 효과", "인간-컴퓨터 상호작용"]
+    },
+    {
+      "id": "007-pattern-template",
+      "type": "comparison",
+      "difficulty": 2,
+      "front": "ELIZA의 패턴 매칭과 템플릿 기반 응답은 각각 어떤 역할을 했는가?",
+      "back": "패턴 매칭은 입력에서 키워드나 구조를 찾았고, 템플릿 기반 응답은 그 결과에 맞는 문장 틀에 사용자 입력 일부를 넣어 응답을 만들었다.",
+      "tags": ["pattern-matching", "template-response"],
+      "relatedPages": ["패턴 매칭", "템플릿 기반 응답"]
+    },
+    {
+      "id": "007-grammatical-reflection",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "문법적 반영(grammatical reflection)은 무엇인가?",
+      "back": "사용자의 진술에서 I/my 같은 표현을 you/your 등으로 바꾸어 질문이나 반응으로 되돌려 주는 기법이다.",
+      "tags": ["reflection", "eliza"],
+      "relatedPages": ["문법적 반영", "ELIZA"]
+    },
+    {
+      "id": "007-doctor-fit",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "로저스식 치료가 ELIZA의 DOCTOR 스크립트에 특히 잘 맞았던 이유는 무엇인가?",
+      "back": "로저스식 치료는 반영, 경청, 개방형 질문을 중시하므로 ELIZA의 모호하고 비지시적인 응답이 무능함이 아니라 치료적 중립성처럼 보일 수 있었기 때문이다.",
+      "tags": ["doctor-script", "rogerian-therapy", "hci"],
+      "relatedPages": ["DOCTOR 스크립트", "로저스식 치료", "ELIZA 효과"]
+    },
+    {
+      "id": "007-understanding-illusion",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "ELIZA가 실제 이해 없이도 이해하는 것처럼 보인 이유는 무엇인가?",
+      "back": "심리적으로 중요한 키워드 선택, 사용자의 말을 되돌려 주는 반영, 모호한 개방형 질문, 상담자라는 역할 기대가 결합했기 때문이다.",
+      "tags": ["illusion", "eliza-effect"],
+      "relatedPages": ["ELIZA", "ELIZA 효과", "문법적 반영"]
+    },
+    {
+      "id": "007-turing-link",
+      "type": "timeline",
+      "difficulty": 2,
+      "front": "튜링 테스트에서 ELIZA로 이어지는 흐름을 간단히 말해 보라.",
+      "back": "튜링 테스트가 언어 행동을 기계 지능 평가의 기준으로 제시했고, ELIZA는 그 질문을 실제 자연어 대화 프로그램으로 구현한 초기 사례가 되었다.",
+      "tags": ["turing-test", "eliza"],
+      "relatedPages": ["튜링 테스트", "ELIZA"]
+    },
+    {
+      "id": "007-eliza-vs-llm",
+      "type": "comparison",
+      "difficulty": 2,
+      "front": "ELIZA와 현대 LLM을 비교할 때 주의할 점은 무엇인가?",
+      "back": "현대 LLM은 ELIZA보다 훨씬 강력하지만, 유창한 출력이 실제 이해나 책임 있는 판단을 자동으로 보장하지 않는다는 ELIZA의 교훈은 여전히 유효하다.",
+      "tags": ["llm", "eliza-effect"],
+      "relatedPages": ["ELIZA", "대규모 언어 모델", "ELIZA에서 현대 대화형 AI로"]
+    },
+    {
+      "id": "007-hci-risk",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "ELIZA 효과가 현대 AI 상담이나 AI 동반자에서 안전 문제가 되는 이유는 무엇인가?",
+      "back": "사용자가 시스템에 실제 공감과 전문적 판단을 귀속해 과신하거나 의존할 수 있고, 고위험 상황에서 인간 전문가의 도움을 늦출 수 있기 때문이다.",
+      "tags": ["ai-safety", "hci", "counseling"],
+      "relatedPages": ["ELIZA 효과", "인간-컴퓨터 상호작용", "챗봇"]
+    },
+    {
+      "id": "007-role-framing",
+      "type": "causal",
+      "difficulty": 2,
+      "front": "대화형 AI에서 역할 설정(role framing)이 중요한 이유는 무엇인가?",
+      "back": "같은 응답도 상담자, 교사, 친구, 검색 도구 같은 역할에 따라 사용자가 다르게 해석하며, 시스템의 능력과 책임을 과대평가할 수 있기 때문이다.",
+      "tags": ["role-framing", "hci"],
+      "relatedPages": ["인간-컴퓨터 상호작용", "DOCTOR 스크립트"]
+    },
+    {
+      "id": "007-cloze",
+      "type": "cloze",
+      "difficulty": 2,
+      "front": "ELIZA의 핵심 교훈은 대화형 AI의 설득력이 반드시 {{c1::실제 이해}}에서 나오지 않고, {{c2::사용자의 해석과 역할 기대}}에서도 만들어진다는 점이다.",
+      "back": "이 교훈은 현대 LLM의 의인화, 과신, AI 상담 안전성 논쟁으로 이어진다.",
+      "tags": ["eliza", "eliza-effect", "llm"],
+      "relatedPages": ["ELIZA 효과", "ELIZA에서 현대 대화형 AI로"]
+    }
+  ]
+}
