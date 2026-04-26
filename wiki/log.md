@@ -61,3 +61,10 @@
 - 퀴즈 카드 생성: quiz/cards/ref_월터 피츠.json
 - AGENTS.md에 참고 자료 보강 워크플로 반영
 - index.md 및 overview.md 갱신
+
+## [2026-04-27] reference | 스키너 Verbal Behavior 비평 및 AI 이해 논쟁
+- 참고 자료 요약 페이지 생성: [[ref_스키너 Verbal Behavior 비평]], [[ref_인공지능은 정말로 생각할 수 있는가]]
+- 개념 페이지 생성: [[기능적 분석]], [[자극 통제]], [[강화]], [[맨드와 택트]], [[오토클리틱]], [[강한 AI]], [[약한 AI]], [[의도성]], [[기호 접지 문제]], [[생물학적 자연주의]]
+- 기존 페이지 갱신: [[B.F. 스키너]], [[노엄 촘스키]], [[행동주의적 기준]], [[자극의 빈곤]], [[존 설]], [[중국어 방 논증]], [[대규모 언어 모델]], [[튜링 테스트와 현대 LLM 평가]]
+- 퀴즈 카드 생성: quiz/cards/ref_스키너 Verbal Behavior 비평.json, quiz/cards/ref_인공지능은 정말로 생각할 수 있는가.json
+- index.md 및 overview.md 갱신

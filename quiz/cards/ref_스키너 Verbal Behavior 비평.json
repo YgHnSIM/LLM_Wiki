@@ -1,0 +1,96 @@
+{
+  "source": "ref_스키너 Verbal Behavior 비평",
+  "created": "2026-04-27",
+  "cards": [
+    {
+      "id": "ref-skinner-verbal-behavior",
+      "type": "definition",
+      "difficulty": 1,
+      "front": "스키너의 Verbal Behavior는 언어를 어떻게 설명하려 했는가?",
+      "back": "언어를 의미나 의도보다 자극, 반응, 강화, 박탈 같은 행동주의 변수의 함수로 설명하려 했다.",
+      "tags": ["skinner", "behaviorism", "language"],
+      "relatedPages": ["B.F. 스키너", "기능적 분석"]
+    },
+    {
+      "id": "ref-functional-analysis",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "기능적 분석(Functional Analysis)이란 무엇인가?",
+      "back": "행동의 의미를 내부 정신 상태가 아니라 행동이 일어나는 환경 조건, 자극, 반응, 강화의 관계로 설명하려는 분석 방식이다.",
+      "tags": ["functional-analysis", "behaviorism"],
+      "relatedPages": ["기능적 분석", "행동주의적 기준"]
+    },
+    {
+      "id": "ref-stimulus-control-limit",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "촘스키식 비판에서 자극 통제 개념이 언어 설명에서 약해지는 이유는 무엇인가?",
+      "back": "실제 발화 상황에서는 어떤 자극이 발화를 통제했는지 사후적으로 지정되기 쉬워, 독립적 예측력과 검증 가능성이 약해지기 때문이다.",
+      "tags": ["stimulus-control", "chomsky"],
+      "relatedPages": ["자극 통제", "노엄 촘스키"]
+    },
+    {
+      "id": "ref-reinforcement-overextension",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "강화(reinforcement) 개념을 언어 전반에 너무 넓게 적용하면 어떤 문제가 생기는가?",
+      "back": "무엇이든 강화로 설명할 수 있게 되면서, 어떤 발화가 왜 나타났는지 미리 예측하거나 반증하기 어려워진다.",
+      "tags": ["reinforcement", "explanation"],
+      "relatedPages": ["강화", "행동주의적 기준"]
+    },
+    {
+      "id": "ref-mand-tact-comparison",
+      "type": "comparison",
+      "difficulty": 2,
+      "front": "맨드(mand)와 택트(tact)는 어떻게 구분되는가?",
+      "back": "맨드는 요구나 요청처럼 박탈과 강화에 의해 설명되는 발화이고, 택트는 대상이나 사건을 보고 명명·보고하는 발화다.",
+      "tags": ["mand", "tact", "skinner"],
+      "relatedPages": ["맨드와 택트", "B.F. 스키너"]
+    },
+    {
+      "id": "ref-autoclitic",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "오토클리틱(autoclitic)은 스키너 언어 이론에서 무엇을 설명하려는 개념인가?",
+      "back": "다른 언어 반응을 수정하거나 조직해 문장 구조, 문법 표지, 말하는 방식의 효과를 설명하려는 개념이다.",
+      "tags": ["autoclitic", "grammar"],
+      "relatedPages": ["오토클리틱", "통사 구조"]
+    },
+    {
+      "id": "ref-poverty-stimulus-behaviorism",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "자극의 빈곤 논증은 왜 행동주의 언어 학습 설명에 부담을 주는가?",
+      "back": "아이들이 제한적이고 불완전한 입력과 부족한 명시적 강화에도 새로운 문장을 빠르게 만들고 이해한다는 점이 단순 자극-반응 학습만으로 설명되기 어렵기 때문이다.",
+      "tags": ["poverty-of-stimulus", "language-acquisition"],
+      "relatedPages": ["자극의 빈곤", "보편문법"]
+    },
+    {
+      "id": "ref-chomsky-skinner-cognitive-turn",
+      "type": "timeline",
+      "difficulty": 2,
+      "front": "스키너 비판이 인지 혁명과 연결되는 흐름을 간단히 말해 보라.",
+      "back": "행동주의적 언어 설명의 한계 지적 -> 내부 문법과 표상 연구의 정당화 -> 언어와 마음을 계산·정보 처리 관점에서 연구하는 인지과학의 부상.",
+      "tags": ["cognitive-revolution", "chomsky", "skinner"],
+      "relatedPages": ["인지 혁명", "노엄 촘스키"]
+    },
+    {
+      "id": "ref-language-creativity-cloze",
+      "type": "cloze",
+      "difficulty": 2,
+      "front": "촘스키식 비판에서 인간 언어의 핵심 특징은 단순 반복이 아니라 {{c1::새로운 문장}}을 만들고 이해하는 {{c2::창의성}}이다.",
+      "back": "이 창의성은 언어를 자극-반응 습관으로만 설명하기 어렵게 만든다.",
+      "tags": ["language-creativity", "chomsky"],
+      "relatedPages": ["통사론", "자극의 빈곤"]
+    },
+    {
+      "id": "ref-behaviorism-vs-syntax",
+      "type": "comparison",
+      "difficulty": 3,
+      "front": "행동주의 언어관과 촘스키식 통사론의 핵심 차이는 무엇인가?",
+      "back": "행동주의 언어관은 관찰 가능한 자극-반응-강화 관계를 중시하고, 촘스키식 통사론은 발화를 가능하게 하는 내재화된 규칙과 위계적 구조를 중시한다.",
+      "tags": ["behaviorism", "syntax", "comparison"],
+      "relatedPages": ["행동주의적 기준", "통사론"]
+    }
+  ]
+}

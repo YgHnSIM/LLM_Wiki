@@ -1,6 +1,6 @@
 {
-  "version": "2026-04-25T13:19:37.241Z",
-  "totalCards": 80,
+  "version": "2026-04-26T21:53:55.824Z",
+  "totalCards": 101,
   "decks": [
     {
       "fileName": "001_1948_클로드 섀넌_N그램 모델.json",
@@ -1094,6 +1094,168 @@
       ]
     },
     {
+      "fileName": "ref_스키너 Verbal Behavior 비평.json",
+      "source": "ref_스키너 Verbal Behavior 비평",
+      "created": "2026-04-27",
+      "cardCount": 10,
+      "cards": [
+        {
+          "id": "ref-skinner-verbal-behavior",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "스키너의 Verbal Behavior는 언어를 어떻게 설명하려 했는가?",
+          "back": "언어를 의미나 의도보다 자극, 반응, 강화, 박탈 같은 행동주의 변수의 함수로 설명하려 했다.",
+          "tags": [
+            "skinner",
+            "behaviorism",
+            "language"
+          ],
+          "relatedPages": [
+            "B.F. 스키너",
+            "기능적 분석"
+          ]
+        },
+        {
+          "id": "ref-functional-analysis",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "기능적 분석(Functional Analysis)이란 무엇인가?",
+          "back": "행동의 의미를 내부 정신 상태가 아니라 행동이 일어나는 환경 조건, 자극, 반응, 강화의 관계로 설명하려는 분석 방식이다.",
+          "tags": [
+            "functional-analysis",
+            "behaviorism"
+          ],
+          "relatedPages": [
+            "기능적 분석",
+            "행동주의적 기준"
+          ]
+        },
+        {
+          "id": "ref-stimulus-control-limit",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "촘스키식 비판에서 자극 통제 개념이 언어 설명에서 약해지는 이유는 무엇인가?",
+          "back": "실제 발화 상황에서는 어떤 자극이 발화를 통제했는지 사후적으로 지정되기 쉬워, 독립적 예측력과 검증 가능성이 약해지기 때문이다.",
+          "tags": [
+            "stimulus-control",
+            "chomsky"
+          ],
+          "relatedPages": [
+            "자극 통제",
+            "노엄 촘스키"
+          ]
+        },
+        {
+          "id": "ref-reinforcement-overextension",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "강화(reinforcement) 개념을 언어 전반에 너무 넓게 적용하면 어떤 문제가 생기는가?",
+          "back": "무엇이든 강화로 설명할 수 있게 되면서, 어떤 발화가 왜 나타났는지 미리 예측하거나 반증하기 어려워진다.",
+          "tags": [
+            "reinforcement",
+            "explanation"
+          ],
+          "relatedPages": [
+            "강화",
+            "행동주의적 기준"
+          ]
+        },
+        {
+          "id": "ref-mand-tact-comparison",
+          "type": "comparison",
+          "difficulty": 2,
+          "front": "맨드(mand)와 택트(tact)는 어떻게 구분되는가?",
+          "back": "맨드는 요구나 요청처럼 박탈과 강화에 의해 설명되는 발화이고, 택트는 대상이나 사건을 보고 명명·보고하는 발화다.",
+          "tags": [
+            "mand",
+            "tact",
+            "skinner"
+          ],
+          "relatedPages": [
+            "맨드와 택트",
+            "B.F. 스키너"
+          ]
+        },
+        {
+          "id": "ref-autoclitic",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "오토클리틱(autoclitic)은 스키너 언어 이론에서 무엇을 설명하려는 개념인가?",
+          "back": "다른 언어 반응을 수정하거나 조직해 문장 구조, 문법 표지, 말하는 방식의 효과를 설명하려는 개념이다.",
+          "tags": [
+            "autoclitic",
+            "grammar"
+          ],
+          "relatedPages": [
+            "오토클리틱",
+            "통사 구조"
+          ]
+        },
+        {
+          "id": "ref-poverty-stimulus-behaviorism",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "자극의 빈곤 논증은 왜 행동주의 언어 학습 설명에 부담을 주는가?",
+          "back": "아이들이 제한적이고 불완전한 입력과 부족한 명시적 강화에도 새로운 문장을 빠르게 만들고 이해한다는 점이 단순 자극-반응 학습만으로 설명되기 어렵기 때문이다.",
+          "tags": [
+            "poverty-of-stimulus",
+            "language-acquisition"
+          ],
+          "relatedPages": [
+            "자극의 빈곤",
+            "보편문법"
+          ]
+        },
+        {
+          "id": "ref-chomsky-skinner-cognitive-turn",
+          "type": "timeline",
+          "difficulty": 2,
+          "front": "스키너 비판이 인지 혁명과 연결되는 흐름을 간단히 말해 보라.",
+          "back": "행동주의적 언어 설명의 한계 지적 -> 내부 문법과 표상 연구의 정당화 -> 언어와 마음을 계산·정보 처리 관점에서 연구하는 인지과학의 부상.",
+          "tags": [
+            "cognitive-revolution",
+            "chomsky",
+            "skinner"
+          ],
+          "relatedPages": [
+            "인지 혁명",
+            "노엄 촘스키"
+          ]
+        },
+        {
+          "id": "ref-language-creativity-cloze",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "촘스키식 비판에서 인간 언어의 핵심 특징은 단순 반복이 아니라 {{c1::새로운 문장}}을 만들고 이해하는 {{c2::창의성}}이다.",
+          "back": "이 창의성은 언어를 자극-반응 습관으로만 설명하기 어렵게 만든다.",
+          "tags": [
+            "language-creativity",
+            "chomsky"
+          ],
+          "relatedPages": [
+            "통사론",
+            "자극의 빈곤"
+          ]
+        },
+        {
+          "id": "ref-behaviorism-vs-syntax",
+          "type": "comparison",
+          "difficulty": 3,
+          "front": "행동주의 언어관과 촘스키식 통사론의 핵심 차이는 무엇인가?",
+          "back": "행동주의 언어관은 관찰 가능한 자극-반응-강화 관계를 중시하고, 촘스키식 통사론은 발화를 가능하게 하는 내재화된 규칙과 위계적 구조를 중시한다.",
+          "tags": [
+            "behaviorism",
+            "syntax",
+            "comparison"
+          ],
+          "relatedPages": [
+            "행동주의적 기준",
+            "통사론"
+          ]
+        }
+      ]
+    },
+    {
       "fileName": "ref_월터 피츠.json",
       "source": "ref_월터 피츠",
       "created": "2026-04-25",
@@ -1278,6 +1440,180 @@
           "relatedPages": [
             "마음의 계산 이론",
             "연결주의"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "ref_인공지능은 정말로 생각할 수 있는가.json",
+      "source": "ref_인공지능은 정말로 생각할 수 있는가",
+      "created": "2026-04-27",
+      "cardCount": 11,
+      "cards": [
+        {
+          "id": "ref-ai-thinking-core-question",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "「인공지능은 정말로 생각할 수 있는가」 참고 자료의 핵심 질문은 무엇인가?",
+          "back": "지능적으로 행동하는 것과 실제로 이해하거나 생각하는 것이 같은지 묻는 것이다.",
+          "tags": [
+            "ai-thinking",
+            "philosophy"
+          ],
+          "relatedPages": [
+            "ref_인공지능은 정말로 생각할 수 있는가",
+            "중국어 방 논증"
+          ]
+        },
+        {
+          "id": "ref-strong-ai",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "강한 AI(Strong AI)는 어떤 입장인가?",
+          "back": "적절히 프로그래밍된 컴퓨터가 마음을 단순히 모사하는 것이 아니라 실제 이해와 마음을 가질 수 있다는 입장이다.",
+          "tags": [
+            "strong-ai",
+            "searle"
+          ],
+          "relatedPages": [
+            "강한 AI",
+            "존 설"
+          ]
+        },
+        {
+          "id": "ref-weak-ai",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "약한 AI(Weak AI)는 어떤 입장인가?",
+          "back": "컴퓨터가 마음을 연구하고 지능적 작업을 수행하는 강력한 도구가 될 수 있지만, 프로그램 실행 자체가 곧 마음이라는 주장은 하지 않는 입장이다.",
+          "tags": [
+            "weak-ai",
+            "ai-tools"
+          ],
+          "relatedPages": [
+            "약한 AI",
+            "강한 AI"
+          ]
+        },
+        {
+          "id": "ref-chinese-room-syntax-semantics",
+          "type": "comparison",
+          "difficulty": 2,
+          "front": "중국어 방 논증에서 통사론(syntax)과 의미론(semantics)은 어떻게 구분되는가?",
+          "back": "통사론은 형식 규칙에 따른 기호 조작이고, 의미론은 그 기호가 무엇을 뜻하며 세계의 무엇에 관한 것인지의 문제다.",
+          "tags": [
+            "chinese-room",
+            "syntax",
+            "semantics"
+          ],
+          "relatedPages": [
+            "중국어 방 논증",
+            "의도성"
+          ]
+        },
+        {
+          "id": "ref-intentionality",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "의도성(intentionality)이란 무엇인가?",
+          "back": "마음 상태가 어떤 대상, 사건, 사태에 관한 것이라는 성질이다.",
+          "tags": [
+            "intentionality",
+            "philosophy-of-mind"
+          ],
+          "relatedPages": [
+            "의도성",
+            "생물학적 자연주의"
+          ]
+        },
+        {
+          "id": "ref-symbol-grounding",
+          "type": "definition",
+          "difficulty": 3,
+          "front": "기호 접지 문제(symbol grounding problem)는 무엇을 묻는가?",
+          "back": "시스템 내부 기호가 다른 기호와의 관계만이 아니라 지각, 행동, 환경을 통해 세계와 어떻게 연결되어 의미를 갖는지 묻는다.",
+          "tags": [
+            "symbol-grounding",
+            "meaning"
+          ],
+          "relatedPages": [
+            "기호 접지 문제",
+            "체화된 경험"
+          ]
+        },
+        {
+          "id": "ref-systems-reply",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "중국어 방 논증에 대한 시스템 응답은 무엇을 주장하는가?",
+          "back": "방 안의 사람은 중국어를 이해하지 못해도, 사람과 규칙서와 기호 처리 전체 시스템은 중국어를 이해한다고 볼 수 있다는 반론이다.",
+          "tags": [
+            "systems-reply",
+            "chinese-room"
+          ],
+          "relatedPages": [
+            "중국어 방 논증",
+            "강한 AI"
+          ]
+        },
+        {
+          "id": "ref-robot-reply-grounding",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "로봇 응답은 중국어 방 논증에 어떤 보완점을 제안하는가?",
+          "back": "기호 조작만이 아니라 몸, 센서, 행동, 환경과의 상호작용이 더해지면 의미가 접지될 수 있다고 본다.",
+          "tags": [
+            "robot-reply",
+            "embodiment"
+          ],
+          "relatedPages": [
+            "기호 접지 문제",
+            "체화된 경험"
+          ]
+        },
+        {
+          "id": "ref-biological-naturalism",
+          "type": "definition",
+          "difficulty": 3,
+          "front": "생물학적 자연주의(biological naturalism)는 마음을 어떻게 보는가?",
+          "back": "마음을 자연 세계의 생물학적 현상으로 보지만, 형식적 프로그램 실행만으로 마음을 충분히 설명할 수 있다고 보지는 않는다.",
+          "tags": [
+            "biological-naturalism",
+            "searle"
+          ],
+          "relatedPages": [
+            "생물학적 자연주의",
+            "존 설"
+          ]
+        },
+        {
+          "id": "ref-llm-evaluation-two-levels",
+          "type": "comparison",
+          "difficulty": 2,
+          "front": "LLM 평가에서 기능적 평가와 철학적 평가는 어떻게 다른가?",
+          "back": "기능적 평가는 모델이 과제를 얼마나 잘 수행하는지 보며, 철학적 평가는 그 수행이 실제 이해나 의도성을 포함하는지 묻는다.",
+          "tags": [
+            "llm-evaluation",
+            "intentionality"
+          ],
+          "relatedPages": [
+            "튜링 테스트와 현대 LLM 평가",
+            "대규모 언어 모델"
+          ]
+        },
+        {
+          "id": "ref-ai-thinking-cloze",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "중국어 방 논증은 적절한 {{c1::기호 조작}}이 곧 {{c2::의미 이해}}를 보장하지는 않는다고 주장한다.",
+          "back": "이 구분은 현대 LLM의 유창한 출력과 실제 이해를 분리해서 평가해야 한다는 논점으로 이어진다.",
+          "tags": [
+            "chinese-room",
+            "llm"
+          ],
+          "relatedPages": [
+            "중국어 방 논증",
+            "대규모 언어 모델"
           ]
         }
       ]
