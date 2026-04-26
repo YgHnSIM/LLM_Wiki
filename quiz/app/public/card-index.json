@@ -1,6 +1,6 @@
 {
-  "version": "2026-04-26T21:53:55.824Z",
-  "totalCards": 101,
+  "version": "2026-04-26T23:14:36.239Z",
+  "totalCards": 113,
   "decks": [
     {
       "fileName": "001_1948_클로드 섀넌_N그램 모델.json",
@@ -1089,6 +1089,200 @@
           "relatedPages": [
             "노엄 촘스키",
             "촘스키에서 대규모 언어 모델로"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "006_1962_위드로-호프_MADALINE.json",
+      "source": "006_1962_위드로-호프_MADALINE",
+      "created": "2026-04-27",
+      "cardCount": 12,
+      "cards": [
+        {
+          "id": "006-madaline-definition",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "MADALINE은 무엇인가?",
+          "back": "여러 ADALINE 유닛을 결합하고 고정 논리 게이트로 출력을 종합한 초기 신경망 구조로, 통신과 신호 처리의 실제 문제에 적용되었다.",
+          "tags": [
+            "madaline",
+            "neural-network",
+            "signal-processing"
+          ],
+          "relatedPages": [
+            "MADALINE",
+            "ADALINE"
+          ]
+        },
+        {
+          "id": "006-adaline-vs-perceptron",
+          "type": "comparison",
+          "difficulty": 2,
+          "front": "ADALINE과 퍼셉트론의 핵심 학습 차이는 무엇인가?",
+          "back": "퍼셉트론은 임계값을 지난 이진 출력으로 오류를 보지만, ADALINE은 학습 중 임계값 적용 전의 연속 선형 출력으로 오류를 계산한다.",
+          "tags": [
+            "adaline",
+            "perceptron"
+          ],
+          "relatedPages": [
+            "ADALINE",
+            "퍼셉트론"
+          ]
+        },
+        {
+          "id": "006-lms-definition",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "LMS 알고리즘(Least Mean Squares)은 무엇을 최소화하려는가?",
+          "back": "목표 출력과 실제 출력 사이의 평균 제곱 오차를 줄이도록 가중치를 점진적으로 갱신한다.",
+          "tags": [
+            "lms",
+            "optimization"
+          ],
+          "relatedPages": [
+            "LMS 알고리즘",
+            "경사하강법"
+          ]
+        },
+        {
+          "id": "006-widrow-hoff-rule",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "위드로-호프 규칙은 어떤 방식으로 가중치를 조정하는가?",
+          "back": "목표 출력과 실제 선형 출력의 차이, 입력값, 학습률에 비례해 가중치를 조정한다.",
+          "tags": [
+            "widrow-hoff",
+            "delta-rule"
+          ],
+          "relatedPages": [
+            "위드로-호프 규칙",
+            "가중치",
+            "학습률"
+          ]
+        },
+        {
+          "id": "006-madaline-hybrid-structure",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "MADALINE이 고정 논리 게이트를 사용한 이유는 무엇인가?",
+          "back": "1960년대 초에는 모든 층을 학습시키는 일반적 방법과 하드웨어가 부족했기 때문에, 학습 가능한 ADALINE과 고정 논리를 결합하는 방식이 구현 가능하고 신뢰성 있는 타협이었다.",
+          "tags": [
+            "hybrid-structure",
+            "logic-gate"
+          ],
+          "relatedPages": [
+            "혼합 구조",
+            "논리 게이트",
+            "MADALINE"
+          ]
+        },
+        {
+          "id": "006-adaptive-filter",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "적응 필터(adaptive filter)는 무엇인가?",
+          "back": "입력 신호와 환경 변화에 맞춰 필터 계수를 자동으로 조정하는 신호 처리 시스템이다.",
+          "tags": [
+            "adaptive-filter",
+            "signal-processing"
+          ],
+          "relatedPages": [
+            "적응 필터",
+            "적응 신호 처리"
+          ]
+        },
+        {
+          "id": "006-voice-activity-detection",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "음성 활동 감지(VAD)는 무엇을 판별하는 작업인가?",
+          "back": "오디오 구간에 실제 사람의 음성이 있는지, 아니면 배경 잡음이나 침묵만 있는지 판별하는 작업이다.",
+          "tags": [
+            "vad",
+            "speech"
+          ],
+          "relatedPages": [
+            "음성 활동 감지",
+            "MADALINE에서 현대 음성 AI로"
+          ]
+        },
+        {
+          "id": "006-feature-engineering-limit",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "MADALINE 시대에 특징 공학이 중요한 이유는 무엇인가?",
+          "back": "모델이 원시 신호에서 표현을 자동으로 깊게 학습하지 못했기 때문에, 엔지니어가 주파수 대역 에너지 같은 유용한 입력 특징을 직접 설계해야 했기 때문이다.",
+          "tags": [
+            "feature-engineering",
+            "speech"
+          ],
+          "relatedPages": [
+            "특징 공학",
+            "음성 활동 감지"
+          ]
+        },
+        {
+          "id": "006-echo-cancellation",
+          "type": "causal",
+          "difficulty": 2,
+          "front": "에코 제거에 적응 필터가 적합한 이유는 무엇인가?",
+          "back": "에코 경로와 회선 조건이 계속 변하기 때문에, 관찰된 오차를 이용해 필터 계수를 계속 조정하는 방식이 필요하기 때문이다.",
+          "tags": [
+            "echo-cancellation",
+            "adaptive-filter"
+          ],
+          "relatedPages": [
+            "에코 제거",
+            "적응 필터"
+          ]
+        },
+        {
+          "id": "006-gradient-to-backprop",
+          "type": "timeline",
+          "difficulty": 2,
+          "front": "MADALINE에서 현대 딥러닝으로 이어지는 오류 기반 학습 계보를 간단히 말해 보라.",
+          "back": "ADALINE의 연속 출력과 LMS -> MADALINE의 실용적 적응 시스템 -> 역전파를 통한 다층 신경망 전체 학습 -> 현대 딥러닝.",
+          "tags": [
+            "timeline",
+            "gradient-descent",
+            "deep-learning"
+          ],
+          "relatedPages": [
+            "LMS 알고리즘",
+            "역전파",
+            "딥러닝"
+          ]
+        },
+        {
+          "id": "006-speech-ai-pipeline",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "MADALINE의 유산이 현대 음성 AI에서 여전히 의미 있는 이유는 무엇인가?",
+          "back": "음성 AI는 언어 모델만으로 완성되지 않고, 에코 제거, 잡음 억제, 음성 활동 감지 같은 신호 처리 전단의 안정성에 의존하기 때문이다.",
+          "tags": [
+            "speech-ai",
+            "llm",
+            "signal-processing"
+          ],
+          "relatedPages": [
+            "MADALINE에서 현대 음성 AI로",
+            "대규모 언어 모델"
+          ]
+        },
+        {
+          "id": "006-madaline-cloze",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "MADALINE의 역사적 의미는 신경망을 {{c1::실험실의 이론적 가능성}}에서 {{c2::실제 공학 문제}}로 옮긴 데 있다.",
+          "back": "특히 통신, 음성 활동 감지, 에코 제거, 적응 필터링에서 실용성을 보여 주었다.",
+          "tags": [
+            "madaline",
+            "history"
+          ],
+          "relatedPages": [
+            "MADALINE",
+            "적응 신호 처리"
           ]
         }
       ]
