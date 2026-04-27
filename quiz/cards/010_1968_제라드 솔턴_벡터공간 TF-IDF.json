@@ -1,0 +1,114 @@
+{
+  "source": "010_1968_제라드 솔턴_벡터공간 TF-IDF",
+  "created": "2026-04-27",
+  "cards": [
+    {
+      "id": "010-vector-space-model-definition",
+      "type": "definition",
+      "difficulty": 1,
+      "front": "벡터 공간 모델(Vector Space Model)은 정보 검색에서 무엇을 하는가?",
+      "back": "문서와 질의를 고차원 벡터로 표현하고, 벡터 간 유사도로 관련성 순위를 계산한다.",
+      "tags": ["vsm", "information-retrieval", "salton"],
+      "relatedPages": ["벡터 공간 모델", "정보 검색", "제라드 솔턴"]
+    },
+    {
+      "id": "010-tfidf-definition",
+      "type": "definition",
+      "difficulty": 1,
+      "front": "TF-IDF는 어떤 두 요소를 결합한 가중치인가?",
+      "back": "문서 안에서 용어가 얼마나 자주 등장하는지 보는 용어 빈도(TF)와, 전체 컬렉션에서 그 용어가 얼마나 드문지 보는 역문서 빈도(IDF)를 결합한다.",
+      "tags": ["tf-idf", "term-weighting"],
+      "relatedPages": ["TF-IDF", "용어 빈도", "역문서 빈도"]
+    },
+    {
+      "id": "010-boolean-limitation",
+      "type": "causal",
+      "difficulty": 2,
+      "front": "불리언 검색이 관련성 순위화에 약한 이유는 무엇인가?",
+      "back": "문서를 조건 만족 또는 불만족으로 나누기 때문에, 문서가 질의와 얼마나 관련 있는지의 정도를 표현하기 어렵기 때문이다.",
+      "tags": ["boolean-search", "ranking"],
+      "relatedPages": ["불리언 검색", "관련성 순위화", "정보 검색"]
+    },
+    {
+      "id": "010-cosine-similarity",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "코사인 유사도는 문서 비교에서 어떤 문제를 완화하는가?",
+      "back": "벡터 크기로 정규화해 문서 길이의 영향을 줄이고, 단어 분포의 방향 유사성을 비교하게 해 준다.",
+      "tags": ["cosine-similarity", "vector-space"],
+      "relatedPages": ["코사인 유사도", "벡터 공간 모델"]
+    },
+    {
+      "id": "010-idf-causal",
+      "type": "causal",
+      "difficulty": 2,
+      "front": "IDF가 모든 문서에 흔한 단어의 가중치를 낮추는 이유는 무엇인가?",
+      "back": "거의 모든 문서에 등장하는 단어는 특정 문서를 구별하는 정보가 적기 때문이다.",
+      "tags": ["idf", "tf-idf"],
+      "relatedPages": ["역문서 빈도", "TF-IDF"]
+    },
+    {
+      "id": "010-sparse-vector",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "희소 벡터(sparse vector)는 무엇인가?",
+      "back": "대부분의 차원 값이 0인 벡터다. TF-IDF 문서 벡터는 전체 어휘 중 실제 등장한 단어만 0이 아닌 값을 갖는다.",
+      "tags": ["sparse-vector", "tf-idf"],
+      "relatedPages": ["희소 벡터", "TF-IDF", "SMART 시스템"]
+    },
+    {
+      "id": "010-bag-of-words-limitation",
+      "type": "comparison",
+      "difficulty": 2,
+      "front": "단어 주머니(Bag of Words) 표현의 장점과 한계는 무엇인가?",
+      "back": "단순하고 효율적으로 문서 주제를 포착할 수 있지만, 어순, 구문 관계, 문맥, 다의어를 잘 처리하지 못한다.",
+      "tags": ["bag-of-words", "limitations"],
+      "relatedPages": ["단어 주머니", "TF-IDF", "어휘 불일치"]
+    },
+    {
+      "id": "010-vocabulary-mismatch",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "어휘 불일치(Vocabulary Mismatch)는 무엇인가?",
+      "back": "사용자와 문서 작성자가 같은 의미를 서로 다른 단어로 표현해 표면 단어 기반 검색이 관련 문서를 놓치는 문제다.",
+      "tags": ["vocabulary-mismatch", "semantic-search"],
+      "relatedPages": ["어휘 불일치", "의미 검색", "조밀 벡터"]
+    },
+    {
+      "id": "010-sparse-vs-dense",
+      "type": "comparison",
+      "difficulty": 3,
+      "front": "희소 검색과 조밀 검색의 핵심 차이는 무엇인가?",
+      "back": "희소 검색은 단어 차원과 정확한 용어 매칭에 강하고, 조밀 검색은 신경망 임베딩으로 표현이 달라도 의미가 가까운 문서를 찾는 데 강하다.",
+      "tags": ["sparse-search", "dense-retrieval", "hybrid-search"],
+      "relatedPages": ["희소 벡터", "조밀 벡터", "하이브리드 검색"]
+    },
+    {
+      "id": "010-bm25",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "BM25는 TF-IDF와 어떤 관계가 있는가?",
+      "back": "TF-IDF식 직관을 문서 길이 정규화와 용어 빈도 포화로 확장한 강력한 희소 랭킹 함수로 볼 수 있다.",
+      "tags": ["bm25", "tf-idf", "ranking"],
+      "relatedPages": ["BM25", "TF-IDF", "정보 검색"]
+    },
+    {
+      "id": "010-hybrid-search-rag",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "RAG에서 하이브리드 검색이 유용한 이유는 무엇인가?",
+      "back": "BM25는 정확한 이름과 희귀 용어에 강하고, 조밀 검색은 의미가 비슷하지만 단어가 다른 문서를 찾는 데 강하므로 두 방식을 결합하면 근거 문서 검색 품질이 좋아질 수 있다.",
+      "tags": ["rag", "hybrid-search", "retrieval"],
+      "relatedPages": ["검색 증강 생성", "하이브리드 검색", "BM25", "의미 검색"]
+    },
+    {
+      "id": "010-cloze",
+      "type": "cloze",
+      "difficulty": 2,
+      "front": "솔턴의 벡터 공간 모델은 검색을 문자열 일치 문제가 아니라 {{c1::질의 벡터와 문서 벡터 사이의 기하학적 유사성}}을 계산하는 문제로 바꾸었다.",
+      "back": "이 관점은 TF-IDF, BM25, 의미 검색, RAG까지 이어지는 검색 기반 언어 AI의 핵심 전제다.",
+      "tags": ["salton", "vector-space", "rag"],
+      "relatedPages": ["제라드 솔턴", "벡터 공간 모델", "TF-IDF에서 의미 검색과 RAG로"]
+    }
+  ]
+}
