@@ -1,0 +1,114 @@
+{
+  "source": "008_1967_앤드루 비터비_비터비 알고리즘",
+  "created": "2026-04-27",
+  "cards": [
+    {
+      "id": "008-viterbi-definition",
+      "type": "definition",
+      "difficulty": 1,
+      "front": "비터비 알고리즘은 무엇을 찾는 알고리즘인가?",
+      "back": "관측값 시퀀스가 주어졌을 때 가장 가능성 높은 은닉 상태 시퀀스를 찾는 동적 계획법 알고리즘이다.",
+      "tags": ["viterbi", "dynamic-programming", "hmm"],
+      "relatedPages": ["비터비 알고리즘", "동적 계획법", "은닉 마르코프 모델"]
+    },
+    {
+      "id": "008-origin",
+      "type": "timeline",
+      "difficulty": 1,
+      "front": "비터비 알고리즘은 원래 어떤 분야의 문제에서 출발했는가?",
+      "back": "1967년 앤드루 비터비가 디지털 통신의 컨볼루션 코드 디코딩, 즉 잡음 속에서 원래 비트열을 복원하는 문제를 위해 제안했다.",
+      "tags": ["history", "telecommunications"],
+      "relatedPages": ["앤드루 비터비", "컨볼루션 코드"]
+    },
+    {
+      "id": "008-complexity",
+      "type": "causal",
+      "difficulty": 2,
+      "front": "비터비 알고리즘이 완전 탐색보다 훨씬 효율적인 이유는 무엇인가?",
+      "back": "각 시간 단계와 상태에 도달하는 최적 접두 경로만 저장하고 나머지 경로를 버리기 때문에, 지수적 후보 공간을 다항 시간 동적 계획법으로 줄인다.",
+      "tags": ["complexity", "dynamic-programming"],
+      "relatedPages": ["비터비 알고리즘", "동적 계획법", "트렐리스"]
+    },
+    {
+      "id": "008-hmm-elements",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "HMM의 세 핵심 요소는 무엇인가?",
+      "back": "초기 상태 확률, 상태 간 전이 확률, 각 상태가 관측값을 낼 방출 확률이다.",
+      "tags": ["hmm", "probability"],
+      "relatedPages": ["은닉 마르코프 모델", "전이 확률", "방출 확률"]
+    },
+    {
+      "id": "008-backpointer",
+      "type": "definition",
+      "difficulty": 2,
+      "front": "비터비 알고리즘에서 백포인터는 왜 필요한가?",
+      "back": "최적 점수를 만든 이전 상태를 저장해 두었다가, 마지막 상태에서 거꾸로 따라가 전체 최적 상태 시퀀스를 복원하기 위해 필요하다.",
+      "tags": ["backpointer", "decoding"],
+      "relatedPages": ["백포인터", "비터비 알고리즘"]
+    },
+    {
+      "id": "008-pos-tagging",
+      "type": "causal",
+      "difficulty": 2,
+      "front": "HMM 품사 태깅에서 단어와 품사는 각각 무엇에 해당하는가?",
+      "back": "단어는 관측값이고, 품사는 직접 보이지 않는 은닉 상태에 해당한다.",
+      "tags": ["pos-tagging", "hmm"],
+      "relatedPages": ["품사 태깅", "은닉 마르코프 모델"]
+    },
+    {
+      "id": "008-viterbi-vs-forward-backward",
+      "type": "comparison",
+      "difficulty": 3,
+      "front": "비터비 알고리즘과 전향-후향 알고리즘의 차이는 무엇인가?",
+      "back": "비터비는 가장 가능성 높은 단일 경로를 찾고, 전향-후향은 가능한 경로들을 합산해 상태별 주변 확률이나 관측 시퀀스의 확률을 계산한다.",
+      "tags": ["viterbi", "forward-backward"],
+      "relatedPages": ["비터비 알고리즘", "전향-후향 알고리즘"]
+    },
+    {
+      "id": "008-crf",
+      "type": "comparison",
+      "difficulty": 3,
+      "front": "CRF는 HMM에 비해 어떤 점을 보완했는가?",
+      "back": "입력 전체의 다양한 특징을 조건부로 활용할 수 있어, HMM의 강한 독립성 가정보다 풍부한 문맥 정보를 레이블링에 반영할 수 있다.",
+      "tags": ["crf", "sequence-labeling"],
+      "relatedPages": ["조건부 랜덤 필드", "은닉 마르코프 모델", "시퀀스 레이블링"]
+    },
+    {
+      "id": "008-beam-search",
+      "type": "comparison",
+      "difficulty": 2,
+      "front": "빔 탐색은 비터비 알고리즘과 어떤 점에서 닮았고, 어떤 점에서 다른가?",
+      "back": "둘 다 유망한 후보 경로만 남겨 탐색 공간을 줄인다. 그러나 비터비는 특정 HMM 구조에서 최적성을 보장하는 반면, 빔 탐색은 보통 근사 탐색이다.",
+      "tags": ["beam-search", "llm"],
+      "relatedPages": ["빔 탐색", "비터비 알고리즘", "대규모 언어 모델"]
+    },
+    {
+      "id": "008-modern-llm",
+      "type": "causal",
+      "difficulty": 3,
+      "front": "현대 LLM이 비터비 알고리즘을 직접 쓰지 않더라도 비터비가 중요한 이유는 무엇인가?",
+      "back": "거대한 후보 시퀀스 공간에서 유망한 경로를 점수화하고 가지치기한다는 디코딩 문제의 고전적 기준점을 제공하기 때문이다.",
+      "tags": ["llm", "decoding"],
+      "relatedPages": ["비터비 알고리즘에서 트랜스포머 디코딩으로", "시퀀스 디코딩"]
+    },
+    {
+      "id": "008-cloze",
+      "type": "cloze",
+      "difficulty": 2,
+      "front": "비터비 알고리즘의 핵심 통찰은 모든 경로를 나열하지 않고, 각 상태에 도달하는 {{c1::최적 접두 경로}}만 보존하는 것이다.",
+      "back": "이 통찰 덕분에 지수적 완전 탐색을 피하고 다항 시간 디코딩이 가능해졌다.",
+      "tags": ["viterbi", "dynamic-programming"],
+      "relatedPages": ["비터비 알고리즘", "동적 계획법"]
+    },
+    {
+      "id": "008-sequence-labeling",
+      "type": "definition",
+      "difficulty": 1,
+      "front": "시퀀스 레이블링이란 무엇인가?",
+      "back": "입력 시퀀스의 각 요소에 순서 있는 레이블을 붙이는 과제로, 품사 태깅과 개체명 인식이 대표적이다.",
+      "tags": ["sequence-labeling", "nlp"],
+      "relatedPages": ["시퀀스 레이블링", "품사 태깅", "개체명 인식"]
+    }
+  ]
+}
