@@ -1,6 +1,6 @@
 {
-  "version": "2026-04-27T01:32:49.167Z",
-  "totalCards": 161,
+  "version": "2026-04-27T13:48:23.004Z",
+  "totalCards": 173,
   "decks": [
     {
       "fileName": "001_1948_클로드 섀넌_N그램 모델.json",
@@ -2083,6 +2083,209 @@
             "제라드 솔턴",
             "벡터 공간 모델",
             "TF-IDF에서 의미 검색과 RAG로"
+          ]
+        }
+      ]
+    },
+    {
+      "fileName": "011_1969_로저 섕크_개념 의존 이론.json",
+      "source": "011_1969_로저 섕크_개념 의존 이론",
+      "created": "2026-04-27",
+      "cardCount": 12,
+      "cards": [
+        {
+          "id": "011-conceptual-dependency-definition",
+          "type": "definition",
+          "difficulty": 1,
+          "front": "개념 의존 이론(Conceptual Dependency)은 무엇을 목표로 했는가?",
+          "back": "문장을 표층 구문이 아니라 원시 행동과 역할의 구조로 표현해 의미적 동등성, 추론, 질의응답을 가능하게 하는 것을 목표로 했다.",
+          "tags": [
+            "conceptual-dependency",
+            "nlu",
+            "semantic-representation"
+          ],
+          "relatedPages": [
+            "개념 의존 이론",
+            "로저 섕크",
+            "자연어 이해"
+          ]
+        },
+        {
+          "id": "011-canonical-representation",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "표준 의미 표현이 중요한 이유는 무엇인가?",
+          "back": "서로 다른 표층 문장이 같은 사건을 나타낼 때 공통 구조로 사상해 의역 인식과 추론을 쉽게 만들기 때문이다.",
+          "tags": [
+            "canonical-representation",
+            "meaning-representation"
+          ],
+          "relatedPages": [
+            "표준 의미 표현",
+            "개념 의존 이론"
+          ]
+        },
+        {
+          "id": "011-atrans-example",
+          "type": "causal",
+          "difficulty": 2,
+          "front": "\"John gave Mary a book\"과 \"Mary received a book from John\"이 개념 의존에서 같은 구조로 표현될 수 있는 이유는 무엇인가?",
+          "back": "두 문장 모두 John에서 Mary로 책의 소유가 이전되는 ATRANS 사건을 나타내기 때문이다.",
+          "tags": [
+            "atrans",
+            "paraphrase"
+          ],
+          "relatedPages": [
+            "개념 의존 이론",
+            "원시 행동",
+            "표준 의미 표현"
+          ]
+        },
+        {
+          "id": "011-primitive-actions",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "원시 행동(Primitive Action)은 무엇인가?",
+          "back": "다양한 동사와 사건을 더 기본적인 행동 유형으로 분해하기 위해 개념 의존 이론이 사용한 사건 단위다. ATRANS, PTRANS, MTRANS 등이 있다.",
+          "tags": [
+            "primitive-actions",
+            "schank"
+          ],
+          "relatedPages": [
+            "원시 행동",
+            "개념 의존 이론"
+          ]
+        },
+        {
+          "id": "011-conceptual-case",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "개념적 격(Conceptual Case)은 무엇을 나타내는가?",
+          "back": "ACTOR, OBJECT, TO, FROM처럼 원시 행동 안에서 참여자가 맡는 의미 역할을 나타낸다.",
+          "tags": [
+            "conceptual-case",
+            "semantic-roles"
+          ],
+          "relatedPages": [
+            "개념적 격",
+            "의미역 레이블링"
+          ]
+        },
+        {
+          "id": "011-margie",
+          "type": "definition",
+          "difficulty": 2,
+          "front": "MARGIE는 개념 의존 이론을 어떻게 활용했는가?",
+          "back": "영어 문장을 개념 의존 구조로 변환해 메모리에 저장하고, 그 구조를 바탕으로 질문에 답하거나 의역 문장을 생성했다.",
+          "tags": [
+            "margie",
+            "question-answering"
+          ],
+          "relatedPages": [
+            "MARGIE",
+            "개념 의존 이론"
+          ]
+        },
+        {
+          "id": "011-sam-script",
+          "type": "causal",
+          "difficulty": 2,
+          "front": "SAM에서 스크립트가 필요한 이유는 무엇인가?",
+          "back": "식당 방문처럼 전형적인 사건 순서를 이용해 텍스트에 명시되지 않은 상식적 사건을 보완하고 질문에 답하기 위해서다.",
+          "tags": [
+            "sam",
+            "script",
+            "commonsense"
+          ],
+          "relatedPages": [
+            "SAM",
+            "스크립트",
+            "상식 지식"
+          ]
+        },
+        {
+          "id": "011-pam-plan",
+          "type": "comparison",
+          "difficulty": 2,
+          "front": "SAM과 PAM의 차이는 무엇인가?",
+          "back": "SAM은 전형적 상황의 스크립트를 적용하고, PAM은 인물의 목표와 계획을 추론해 행동의 의도를 해석한다.",
+          "tags": [
+            "sam",
+            "pam",
+            "plans"
+          ],
+          "relatedPages": [
+            "SAM",
+            "PAM",
+            "계획기"
+          ]
+        },
+        {
+          "id": "011-knowledge-bottleneck",
+          "type": "causal",
+          "difficulty": 3,
+          "front": "개념 의존 시스템이 지식 획득 병목에 부딪힌 이유는 무엇인가?",
+          "back": "동사-원시 행동 매핑, 격 할당, 전제 조건과 결과 규칙, 도메인별 스크립트를 사람이 직접 설계해야 했기 때문이다.",
+          "tags": [
+            "knowledge-acquisition",
+            "symbolic-ai"
+          ],
+          "relatedPages": [
+            "지식 획득 병목",
+            "지식 공학 병목",
+            "상징주의 AI"
+          ]
+        },
+        {
+          "id": "011-modern-successors",
+          "type": "comparison",
+          "difficulty": 3,
+          "front": "개념 의존 이론의 현대적 후속 흐름에는 무엇이 있는가?",
+          "back": "의미역 레이블링, 프레임 의미론, 추상 의미 표현(AMR), 지식 그래프, 도구 호출용 의미 파싱 등이 있다.",
+          "tags": [
+            "semantic-parsing",
+            "amr",
+            "srl"
+          ],
+          "relatedPages": [
+            "의미 파싱",
+            "의미역 레이블링",
+            "프레임 의미론",
+            "추상 의미 표현",
+            "지식 그래프"
+          ]
+        },
+        {
+          "id": "011-symbolic-vs-neural",
+          "type": "comparison",
+          "difficulty": 3,
+          "front": "개념 의존과 현대 신경망 NLP의 핵심 대비는 무엇인가?",
+          "back": "개념 의존은 명시적 구조와 설명 가능성에 강하지만 수작업 지식에 의존하고, 신경망 NLP는 데이터에서 넓은 표현을 학습하지만 내부 구조와 추론 과정이 불투명할 수 있다.",
+          "tags": [
+            "symbolic-ai",
+            "neural-nlp",
+            "comparison"
+          ],
+          "relatedPages": [
+            "개념 의존에서 현대 의미 파싱으로",
+            "상징주의 AI",
+            "대규모 언어 모델"
+          ]
+        },
+        {
+          "id": "011-cloze",
+          "type": "cloze",
+          "difficulty": 2,
+          "front": "개념 의존 이론의 핵심 교훈은 자연어 이해가 단순한 {{c1::구문 분석}}을 넘어 사건, 역할, 상태 변화의 의미 표현을 필요로 한다는 점이다.",
+          "back": "이 교훈은 의미 파싱, 의미역 레이블링, AMR, 지식 그래프, 도구 호출형 AI로 이어진다.",
+          "tags": [
+            "conceptual-dependency",
+            "semantic-parsing"
+          ],
+          "relatedPages": [
+            "개념 의존 이론",
+            "의미 파싱",
+            "개념 의존에서 현대 의미 파싱으로"
           ]
         }
       ]
